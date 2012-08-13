@@ -1,0 +1,7 @@
+{
+data: 
+		[
+		    {cid: "P1" , name:'Project calendar1'},
+		    {cid: "P2" , name:'Project calendar2'}
+		]
+}

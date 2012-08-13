@@ -1,0 +1,7 @@
+{
+data: 
+		[
+		    {cid: "1" , name:'calendar1'},
+		    {cid: "2" , name:'calendar2'}
+		]
+}

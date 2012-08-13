@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="robots" content="noindex,nofollow" />
+		<title>Login - Deskera</title>
+		<link rel="stylesheet" type="text/css" href="style/allYourBases_1.css"/>
+		<link rel="shortcut icon" href="../../images/deskera.png"/>
+		<script type="text/javascript" src="../../scripts/core/42.js"></script>
+		<script type="text/javascript" src="../../scripts/belongToUs_1.js"></script>
+	</head>
+	<body onload="checkCookie(); formFocus();">
+		<div id="wrapper">
+                        <div id="bookmarkheader">
+                             <script type="text/javascript">
+                                var pageurl = window.location.href;
+                                var baseurl ="";
+                                var params = pageurl.split("?");
+                                if(pageurl[1]){
+                                    pageurl = pageurl[1].split("&");
+                                    for(var c = 0; c < params.length; c++){
+                                        var t = params[c].split("=");
+                                        if(t[0] == "first"){
+                                            var txt = "Thank you for signing up for Deskera!<br><span style= 'background-color:yellow'>Bookmark your login page - "+baseurl+"</span>";
+                                            document.write(txt);
+                                        } else if(t[0] == "demo" && t[1] == "true"){
+                                            demoUrl = true;
+                                            validateLogin("John", "1234", true);
+                                        }
+                                    }
+                                }
+                                /*if(pageurl.indexOf("?")>0 && pageurl.substr(pageurl.indexOf("?")+1,pageurl.length) == "first") {
+                                    baseurl = pageurl.substr(0,pageurl.lastIndexOf("/")+1);
+                                    var txt = "Thank you for signing up for Deskera!<br><span style= 'background-color:yellow'>Bookmark your login page - "+baseurl+"</span>";
+                                    document.write(txt);
+                                }*/
+                            </script>
+                            </div>
+			<div id="content">
+				<div class="companylogo">
+					<img src="../../images/store?company=true&original=true"/>
+				</div>
+				<div class="content">
+					<form action="javascript:lValidateEmpty();" name="loginForm" id="loginForm">
+						<p>
+							<label for="UserName" id="UserNameLabel" class="labels">
+								Username:
+							</label>
+							<input name="UserName" type="text" id="UserName" class="inputbox"/><span id="UserNameRequired" class="errorprompt" title="Username is required.">*</span>
+						</p>
+						<p>
+							<label for="Password" id="PasswordLabel" class="labels">
+								Password:
+							</label>
+							<input name="Password" type="password" id="Password" class="inputbox"/><span id="PasswordRequired" class="errorprompt" title="Password is required.">*</span>
+						</p>
+						<p>
+							<input type="submit" name="LoginButton" value="Login" id="LoginButton"/><span id="usrFeedback"></span>
+						</p>
+					</form>
+					<div class="shortcuts">
+					</div>
+				</div>
+			</div>
+		</div>
+                <script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-3639449-2");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</body>
+</html>

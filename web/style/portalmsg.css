@@ -1,0 +1,72 @@
+
+root { 
+    display: block;
+}
+
+.deliconwt {
+    background-position: 0 -385px !important;
+}
+
+.delicon {
+    background-position: 0 -387px !important;
+}
+.sendmsg, .invite {
+    background-position: 0 -1320px !important;
+}
+
+.sendmsgwt {
+    background-position: 0 -1324px !important;
+}
+.outbox {
+    background-position: 0 -698px !important;
+}
+
+.outboxCx {
+    background-position: 0 -699px !important;
+}
+.composemail {
+    background-position: 0 -876px !important;
+}
+.compose {
+    background-position: 0 -314px !important;
+}
+.settings {
+    background-position: 0 -385px !important;
+}
+
+.settingswt {
+    background-position: 0 -388px !important;
+}
+
+.messagePanelHeader{
+    margin:10px;
+}
+
+.messagePanelBody{
+    padding:10px;
+    margin:10px;
+}
+
+.messagePanelBody .x-panel-body{
+    overflow:auto !important;
+}
+
+.messagePanelHeader .x-panel-body{
+    border-bottom:thin solid #666;
+    width:98% !important;
+}
+#attachmentlink{
+    padding-left:105px !important;
+}
+.fileattachremove{
+    padding-left:105px !important;
+    margin-bottom:3px;
+}
+.attachmentlink {
+    color: #083772;
+    text-decoration:none;
+}
+.attachmentlink:hover{
+    color: #456  !important;
+    text-decoration: underline  !important;
+}

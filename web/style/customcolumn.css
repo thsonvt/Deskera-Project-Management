@@ -1,0 +1,100 @@
+/* 
+    Document   : customcolumn
+    Created on : Jul 30, 2011, 3:41:34 PM
+    Author     : kamlesh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* class for add button in custom column*/
+.x-tool-add_column{
+    background: transparent url(../images/dtbar.gif) no-repeat scroll 0 -2427px !important;
+    height: 17px;
+    margin-right:30px;
+    width:16px;
+}
+.cc-grid-title{
+    font: bold 12px tahoma,arial,helvetica,sans-serif;
+    width:100% !important;
+    background:none !important;
+    margin-top:-15px !important;
+    padding-bottom:10px !important;
+    border-bottom:1px solid #FFFFFF !important;
+}
+.cc-grid-title-inner{
+    background:#FFFFFF !important;
+    border-bottom:  none !important;
+}
+.cc-grid-body{
+    background:#FFFFFF !important;
+}
+.cc-grid-row-1 {
+    background-color: #EFFFEE !important;
+}
+cc-grid-row-2{
+    background-color: #FFFFFF !important;
+}
+#adminccgrid td {
+    border-left: none !important;
+    border-right: none !important;
+    background:none !important;
+}
+#adminccgrid .x-grid3-header{
+    background: none repeat scroll 0 0 #F5F5F5 !important;
+    border-bottom: 1px solid black;
+    text-align: left;
+    border-top: 1px solid black;
+    margin-right: 20px;
+    color:#000044;
+}
+.viewcc{
+    background: url("../images/dtbar.gif") no-repeat scroll 0 -3199px transparent !important;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.editcc{
+    background: url("../images/dtbar.gif") no-repeat scroll 0 -3175px transparent !important;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.deletecc{
+    background: url("../images/dtbar.gif") no-repeat scroll 0 -3151px transparent !important;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.deletecrc{
+    background:url("../images/dtbar.gif") no-repeat scroll 0 -820px transparent !important;
+    cursor:pointer;
+    height:15px;
+    margin-left:5px;
+}
+#viewccgrid .x-grid3-header, #viewccgridmasterdata .x-grid3-header{
+    background: none repeat scroll 0 0 #F5F5F5 !important;
+    text-align: left;
+    margin-right: 20px;
+    color:#000044;
+    font-size: 16px;
+}
+#viewccgrid td, #viewccgridmasterdata td{
+    border-left: none !important;
+    border-right: none !important;
+    background:none !important;
+}
+#viewccgrid .x-grid3-hd-row td, #viewccgridmasterdata .x-grid3-hd-row td{
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+#viewccgrid .x-grid3-row td, #viewccgridmasterdata .x-grid3-row td{
+    vertical-align: middle;
+    /* padding-left: 20px;*/
+}
+.ccFieldSet {
+    border: 0px solid red !important;
+    margin-top: 16px !important;
+    width: 80%;
+    padding: 0px;
+}

@@ -1,0 +1,1049 @@
+/*.x-grid3-header {
+ display: none;
+ }*/
+ .insCon, .detailCon{
+     width:500px;
+     height:75px;
+     margin:10px;
+ }
+ 
+ .ins{
+     width:100%;
+     height:18px;
+     float:left;
+ }
+ .quizins{
+     width:100%;
+     height:30px;
+     float:left;
+ }
+ 
+ .openTabs{
+     height:100%;
+     width:100%;
+     margin:5px;
+ }
+ .con1{
+     width:100%;
+     float:left;
+     height:15px;
+ }
+ 
+ .con2{
+     width:10%;
+     float:left;
+     height:100%;
+     padding-top:5px;
+ }
+ 
+ .con3{
+     width:90%;
+     height:100%;
+     float:left;
+     cursor:pointer;
+ }
+ 
+ .nodeinfo{
+     margin:5px;
+ }
+ .infocon{
+     width:100%;
+     height:100%;
+ }
+ .info{
+     width:100%;
+     float:left;
+     height:25%;
+ }
+ .timer{
+     float:right;
+ }
+ .rdiv{
+     margin:25%;
+ }
+ 
+.quizlog{
+    font-size:12px;
+    line-height:150%;
+}
+
+.quizhead{
+    font-size:15px;
+    font-weight: bold;
+}
+.mdiv{
+    width:100%;
+    float:left;
+} 
+.fcss{
+    font-weight:bold;
+}
+.flabel{
+    width:100%;
+    float:left;
+}
+.previewQuiz {
+    background-color: #15428b;
+    font-weight: bold;
+}
+
+#optionBttn {
+    float: left;
+    margin-left: 5px;
+    margin-top: 35px;
+}
+
+#nextBttn {
+    float: left;
+    margin-left: 150px;
+    margin-top: 35px;
+    width: 50px;
+}
+
+#canBttn {
+    float: left;
+    margin-left: 10px;
+    margin-top: 35px;
+    width: 50px;
+}
+
+#optionBttn1, #repeatBttn, #repallBttn, #nextBttn1, #canButton {
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.prevLabel {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+.header1 {
+    height: 100%;
+    width: 100%;
+    background-color: #15428b;
+}
+
+.titlebar {
+    height: 50px;
+    background-color: #99bbe8;
+}
+
+.content, #image, #labelCont{
+    padding: 10px;
+}
+
+.northClass {
+    height: 40px;
+}
+
+.bulletContainer {
+    height: 60px;
+    width: 150px;
+    margin: 5px;
+}
+
+.cutbttn {
+    background-image: url(../images/lms/cut1.png) !important;
+}
+
+.copybttn {
+    background-image: url(../images/lms/copy1.png) !important;
+}
+
+.pastebttn {
+    background-image: url(../images/lms/paste1.png) !important;
+}
+
+.file {
+    background-image: url(../images/lms/document.png) !important;
+}
+
+.quiz {
+    background-image: url(../images/lms/question_icon.png) !important;
+}
+
+.contentPreview, #truefalse, #Ranking, #Matching, #FillBlank, #MulResponse, #MulChoice, #picUpload {
+    width: 100%;
+    height: 100%;
+}
+
+#pictureField {
+    padding: 5px;
+}
+
+#picContainer {
+    margin: auto;
+}
+
+.items {
+    float: left;
+    height: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.bullet {
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding-top:5px;
+}
+
+.mylabel {
+    float: left;
+    width: 120px;
+    height: 20px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a#setdate:hover, a#addrules:hover {
+    color: blue;
+}
+
+.iconclass {
+    background-image: url(../images/lms/s.gif);
+}
+
+ .rules, .subrules, .setdate, .layHeader{
+    margin: 5px;
+}
+
+.anchor {
+    color: red;
+}
+
+#submitbttn {
+    float: left;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.canbttn {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#resmem, #uploadbttn {
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+#uploadbttn1 {
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+#html {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.winicon {
+    background-image: url(../images/lms/Krawler.png) !important;
+}
+/*Quiz.css*/
+.qpic{
+    margin-left:130px;
+    float:left;
+    width:70px;
+    height:70px;
+}
+.ansshow {
+    float: left;
+}
+
+.displaychk {
+    display: none;
+}
+
+.img {
+    background-image: url('../images/lms/Delete1.gif');
+    height: 16px;
+    width: 16px;
+    display: block
+}
+
+.rankdrdiv {
+    float: left;
+    margin: 20px;
+    padding-left:5px;
+    width: auto;
+    min-width:200px;
+    height: 50px;
+    border: solid 1px Black;
+    background-color: #F5F5F5;
+    overflow: auto;
+}
+
+.drdiv {
+    float: left;
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    border: solid 1px Black;
+    background-color: #F5F5F5;
+}
+
+.maindrdiv {
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+}
+
+.drdiv1 {
+    width: 170px;
+    height: 23px;
+    border: solid 1px white;
+    background-color: #D2E0F1;
+}
+
+.drdiv2 {
+    width: 25px;
+    height: 25px;
+    border: solid 1px white;
+    background-color: #D2E0F1;
+}
+
+.optdiv1 {
+    margin: 20px;
+    font-size: 14px;
+    float: left;
+}
+
+.nextbut {
+    background-image: url(../images/Forward2.gif) !important;
+}
+
+.prevbut {
+    background-image: url(../images/Back2.gif) !important;
+}
+
+.timerp {
+    float: right;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.qfont {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.optdiv {
+    margin: 30px;
+    font-size: 14px;
+}
+
+.markssh {
+    float: right;
+    display: inline;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.topshowpanel {
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cssbuttonpanel {
+    float: right;
+}
+
+.closepic {
+    background-image: url(../images/lms/Delete1.gif) !important;
+}
+
+#previewquiz {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.bottomp {
+    background-color: #CEDCF0
+}
+
+.menu1 {
+    z-index: 100;
+}
+
+.addmenu {
+    width: 65px;
+    height: 20px;
+}
+
+.feed {
+    height: 20px;
+    font-size: 12px;
+}
+
+.combo {
+    margin-top: 15px;
+}
+
+.title1 {
+    padding-left: 5px;
+    background-color: #CEDCF0;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fontstyle {
+    margin-left: 10px;
+    background-color: #F9F9F9;
+}
+
+.fontstyle1 {
+    float:left;
+    width:300px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.fontstyle3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.btnstyle {
+    margin-right: 5px;
+    float: left;
+}
+
+.toppanel {
+    margin-top: auto;
+}
+
+.maindiv {
+    width: 100%;
+    height: 208px;
+    overflow: auto;
+}
+
+.sdiv1 {
+    width: 100%;
+    height: 80px;
+}
+.adiv{
+    width:30px;
+    float:left;
+    font-weight:bold;
+}
+.maindivFill {
+    width: 100%;
+    height: 225px;
+    overflow: auto;
+}
+
+.chkdiv {
+    float:left !important;
+    background-color: #F5F5F5 !important;
+    height: 35px !important;
+    width: 5.5% !important;
+}
+
+.matchchkdiv {
+    float: left;
+    background-color: #F5F5F5;
+    height: 37px;
+    width: 45px;
+    margin-top: 0;
+    margin-left: -5px;
+}
+
+.chkdiv1 {
+    float: left;
+    background-color: #FFFFFF;
+    height: 35px;
+    width: 5.5%;
+}
+
+.chk1 {
+    margin: 10px;
+}
+
+.picdiv1, .matchpicdiv1 {
+    float: left;
+    height: 35px;
+    width: 5.5%;
+    background-color: #FFFFFF;
+}
+
+.text1 {
+    margin:20px;
+}
+
+.picdiv, .matchpicdiv {
+    float: left;
+    height: 35px;
+    width: 5.5%;
+    background-color: #F5F5F5;
+}
+
+.a1 {
+    margin: 9px;
+    float:left;
+    font-weight:bold;
+}
+
+.af {
+    float: left;
+    height: auto;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.txtoutermatching {
+    float: left;
+    width: 39%;
+    height: 35px;
+    background-color: #FFFFFF;
+}
+
+.txtoutermatchingch {
+    float: left;
+    width: 39%;
+    height: 35px;
+    background-color: #F5F5F5;
+}
+
+.txtoutermatching1 {
+    float: left;
+    margin-left: 3px;
+    width: 38.8%;
+    height: 35px;
+    background-color: #FFFFFF;
+}
+
+.txtoutermatching1ch {
+    float: left;
+    margin-left: 3px;
+    width: 38.8%;
+    height: 35px;
+    background-color: #F5F5F5;
+}
+
+.txtouter {
+    float: left;
+    width: 79%;
+    height: 35px;
+    background-color: #FFFFFF;
+}
+
+.txtouter1 {
+    float: left;
+    width: 79%;
+    height: 35px;
+    background-color: #F5F5F5;
+}
+
+.txt1 {
+    border: none;
+    margin-left: 17px;
+    height: 30px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.txtmatch {
+    border: none;
+    height: 30px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin-left:5px;
+}
+
+.txtmatchch {
+    margin-left:5px;
+    border: none;
+    height: 30px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.txt2 {
+    border: none;
+    margin-left: 17px;
+    height: 30px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.picture {
+    float: left;
+    margin-left: 475px;
+    font-size: 12px;
+}
+
+.picturefill {
+    float: left;
+    margin-left: 494px;
+    font-size: 12px;
+}
+
+.choice {
+    margin-left:15px;
+}
+
+.matching {
+    margin-left: 180px;
+}
+
+.correct {
+    float: left;
+    margin-left: 30px;
+}
+
+.Answers {
+    float: left;
+    margin-left: 60px;
+}
+
+.shuffle1 {
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+.toppanel {
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.toppanel1 {
+    font-size: 12px;
+}
+
+.questext {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.inner {
+    background-color: #DFE8F6;
+}
+
+.button1 {
+    float: left;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.button2 {
+    float: left;
+    padding-left: 10px;
+    padding-top: 27px;
+}
+
+.textfield1 {
+    padding-top: 40px;
+    padding-left: 5px;
+}
+
+.choicediv11 {
+    background-color: #DFE8F6;
+    height: 45px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.button {
+    float: right;
+    margin: 3px;
+}
+
+.bodycolor {
+    background-color: #DFE8F6;
+}
+
+.choicediv12 {
+    float: left;
+    height: 35px;
+    font-size: 12px;
+    width: 95%;
+}
+
+.choicediv13 {
+    background-color: #F5F5F5;
+    padding-top: 10px;
+    height: 35px;
+    font-size: 12px;
+}
+
+.queslayout * {
+    background-color: #F5F5F5;
+    border-color: Red;
+}
+
+.queslayouttitle {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.layoutdiv {
+    height: 550px;
+    width: auto;
+    margin: 5px;
+}
+
+.extracls {
+    width: 100%;
+}
+
+.font {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #D4D0C8;
+}
+
+.innerdiv {
+    background-color: #F5F5F5;
+    margin: 5px;
+    overflow: auto;
+}
+
+.imgdiv1, .imgdiv2, .imgdiv3, .imgdiv4, .imgdiv5, .imgdiv6 {
+    float: left;
+    margin: 5px;
+    background-color: #FFFFFF;
+    height: 60px;
+    width: 73px;
+}
+
+.hover {
+    float: right;
+    margin-top: 3px;
+    height: 50px;
+    width: 11px;
+    background-image: url(../images/img.PNG);
+    display: none;
+}
+
+.hover1 {
+    float: right;
+    margin-top: 3px;
+    height: 50px;
+    width: 12px;
+    background-image: url(../images/img.PNG);
+    display: block;
+}
+
+.p {
+    height: 62px;
+    width: 80px;
+    border: solid 1px Red;
+}
+
+.cdiv {
+    position: absolute;
+    width: 70px;
+    height: 20px;
+    border: solid 1px Black;
+    background-color: #F5F5F5;
+    display: none;
+}
+
+.f {
+    background-color: #F5F5F5;
+    padding-left: 18px;
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+.blank {
+    width: 120px;
+    border: solid 1px #DFE8F6;
+}
+
+.feedarea {
+    border: none;
+}
+
+.incorrfield {
+    margin-top: 15px;
+}
+
+.feedbut {
+    float: right;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/*Stylesheet.css*/
+.conContainer {
+    width: 350px;
+}
+
+.child1 {
+    float: left;
+    width: 350px;
+}
+
+.bchild {
+    width: 7%;
+    float: left;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mchild {
+    margin-right: 3px;
+    float: left;
+}
+
+.achild {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.chart {
+    background-image: url(../images/lms/bg4.png) !important;
+}
+
+.imgp {
+    background: url(../images/lms/logo1.png) no-repeat;
+}
+
+.pa {
+    background-color: red;
+}
+
+.wrapnorth {
+    position: absolute;
+    left: 40%;
+    top: -20px;
+    font-size:5px !important;
+    height: 30px;
+    width: 30px !important;
+    cursor: crosshair;
+}
+
+.wrapeast {
+    position: absolute;
+    left: 100%;
+    top: 30%;
+    font-size:5px !important;
+    height: 30px;
+    width: 30px;
+    cursor: crosshair;
+}
+
+.wrapsouth {
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    font-size:5px !important;
+    height: 30px;
+    width: 30px;
+    cursor: crosshair;
+}
+
+.wrapwest {
+    position: absolute;
+    left: -20px;
+    top: 30%;
+    font-size:5px !important;
+    height: 30px;
+    width: 30px;
+    cursor: crosshair;
+}
+
+.north {
+    cursor: crosshair;
+    height: 5px;
+    width: 5px;
+    background-color: #0a629c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.east {
+    height: 5px;
+    width: 5px;
+    background-color: #0a629c;
+    position: absolute;
+    cursor: crosshair;
+    left: 0%;
+    top: 40%;
+}
+
+.south {
+    cursor: crosshair;
+    height: 5px;
+    width: 5px;
+    background-color: #0a629c;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.west {
+    cursor: crosshair;
+    height: 5px;
+    width: 5px;
+    background-color: #0a629c;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+.line {
+    cursor: move;
+}
+
+.lmswtfbutton {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.lmswtfbutton:link, a.lmswtfbutton:visited {
+    width: 120px;
+    height: 150px;
+    display: block;
+    float: left;
+    margin: 5px;
+    font: .75em Tahoma, Verdana, Arial;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.lmswtfbutton img {
+    width: 55px;
+    height: 47px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.lmswtfbutton span.labelLms {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+}
+
+.lmswtfbutton span.labelShadow {
+    position: absolute;
+    top: 113px;
+    left: 1px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    color: #215186;
+    padding: 0 5px;
+}
+
+.cust {
+    position: absolute;
+    background: url(../images/lms/logo.png) repeat;
+    z-index: 10;
+    border: 0.5px gray solid;
+    cursor: move;
+}
+
+.cust1 {
+    position: absolute;
+    background: url(../images/lms/assess.png) repeat;
+    z-index: 10;
+    border: 0.5px gray solid;
+    cursor: move;
+}
+
+.retry {
+    position: absolute;
+    background: url(../images/lms/retryblock1.png) repeat;
+    z-index: 10;
+    border: 0.5px gray solid;
+    cursor: move;
+}
+
+.exitped {
+    position: absolute;
+    background: url(../images/lms/retryblock.png) repeat;
+    z-index: 10;
+    border: 0.5px gray solid;
+    cursor: move;
+}
+
+.tx {
+    background: url(../images/lms/assess.png) repeat;
+    border: 1px solid red;
+    padding: 1px 3px;
+    font-size: 11px;
+}
+
+.note {
+    position: absolute;
+    background: url(../images/lms/retryblock.png) repeat;
+    z-index: 10;
+}
+
+.tool {
+    display: none;
+    width: 30px;
+    height: 20px;
+    background: url(../images/lms/logo.png) repeat;
+}
+/*drag.css*/
+.dd-ct {
+    position: absolute;
+    border: 1px solid silver;
+    width: 180px;
+    height: 180px;
+    top: 32px;
+    background-color: #ffffc0;
+}
+
+#dd1-ct {
+    left: 64px;
+}
+
+#dd2-ct {
+    left: 256px;
+}
+
+.dd-item {
+    height: 14px;
+    border: 1px solid #a0a0a0;
+    background-color: #c4d0ff;
+    vertical-align: middle;
+    cursor: move;
+    padding: 2px;
+    z-index: 1000;
+    margin: 2px;
+}
+
+.dd-ct .dd-item {
+    margin: 2px;
+}
+
+.dd-proxy {
+}
+
+.dd-over {
+    background-color: #ffff60;
+}

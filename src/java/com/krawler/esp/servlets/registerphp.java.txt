@@ -1,0 +1,78 @@
+
+package com.krawler.esp.servlets;
+/*
+ * 
+ * author @krawler
+ */
+import com.krawler.common.util.URLUtil;
+import com.krawler.utils.json.base.JSONException;
+import com.krawler.utils.json.base.JSONObject;
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class registerphp extends HttpServlet
+{
+    public registerphp()
+    {
+    }
+
+    public static String authPhpbb(String username, String email, String password)
+    {
+        String phpbbid = "";
+        try
+        {
+            URL url = new URL( URLUtil.baseForumURL +"register.php?");
+            URLConnection urlConn = url.openConnection();
+            urlConn.setDoInput(true);
+            urlConn.setDoOutput(true);
+            urlConn.setUseCaches(false);
+            urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            DataOutputStream printout = new DataOutputStream(urlConn.getOutputStream());
+            String authkey ="JGhSaU4xdkAkLnBAdFdhckRoQG4=";
+            String content = "username="+username+"&password="+password+"&useremail="+email+"&mode=register&authKey="+authkey;
+            printout.writeBytes(content);
+            printout.flush();
+            printout.close();
+            DataInputStream input = new DataInputStream(urlConn.getInputStream());
+            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+            phpbbid = reader.readLine();
+            urlConn.getInputStream().read();
+            return phpbbid;
+        }
+        catch(IOException ioe)
+        {
+            ioe.printStackTrace();
+        }
+        return phpbbid;
+    }
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.close();
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+        processRequest(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+        processRequest(request, response);
+    }
+
+    public String getServletInfo()
+    {
+        return "Short description";
+    }
+}

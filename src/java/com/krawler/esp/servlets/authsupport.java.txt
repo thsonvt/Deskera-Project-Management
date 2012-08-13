@@ -1,0 +1,330 @@
+// Decompiled by DJ v3.10.10.93 Copyright 2007 Atanas Neshkov  Date: 9/15/2008 12:15:46 PM
+// Home Page: http://members.fortunecity.com/neshkov/dj.html  http://www.neshkov.com/dj.html - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   authsupport.java
+
+package com.krawler.esp.servlets;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.krawler.common.util.KrawlerLog;
+import com.krawler.common.util.URLUtil;
+
+public class authsupport extends HttpServlet
+{
+	private static final long serialVersionUID = -4165993991692890152L;
+
+	private List getlogoutHidFields(HttpServletRequest servRequest)
+    {
+        try{
+            URLConnection urlConn;
+        
+        BufferedReader reader;
+        URL getUrl = new URL("url");
+        urlConn = getUrl.openConnection();
+        Cookie cookies[] = servRequest.getCookies();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        String cookiesString = null;
+        if(cookies != null)
+        {
+            for(int i = 0; i < cookies.length; i++)
+                cookiesString = (new StringBuilder()).append(cookies[i].getName()).append("=").append(cookies[i].getValue()).append("; ").toString();
+
+        }
+        urlConn.setRequestProperty("Cookie", cookiesString);
+        DataInputStream input = new DataInputStream(urlConn.getInputStream());
+        reader = new BufferedReader(new InputStreamReader(input));
+        boolean foundLine = false;
+        String temp = null;
+        do
+        {
+            if((temp = reader.readLine()) == null)
+                break;
+            if(!temp.contains("type=\"hidden\" name=\"task\" value=\"logout\""))
+                continue;
+            foundLine = true;
+            break;
+        } while(true);
+        if(!foundLine)
+            return null;
+        
+            String returnValue = reader.readLine().split(" ")[3].split("=")[1].replace("\"", "");
+            List hFields = new ArrayList();
+            hFields.add(returnValue);
+            String s = urlConn.getHeaderField("Set-Cookie");
+            if(s != null)
+            {
+                String d[] = s.split("=");
+                String c[] = d[1].split(";");
+                hFields.add((new StringBuilder()).append(d[0]).append("=").append(c[0]).toString());
+            }
+            return hFields;
+        }
+        catch(Exception ioe)
+        {
+            ioe.printStackTrace();                    
+            KrawlerLog.op.error(ioe, ioe);
+            return null;
+        }
+        
+    }
+
+    private List getloginHidFields(HttpServletRequest servRequest)
+    {
+        try{
+        URLConnection urlConn;
+        BufferedReader reader;
+        
+        URL getUrl = new URL(URLUtil.baseForumURL + "ucp.php?mode=login");
+        urlConn = getUrl.openConnection();
+        Cookie cookies[] = servRequest.getCookies();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        String useragent = servRequest.getHeader("User-agent");
+        urlConn.setRequestProperty("User-agent", useragent);
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        String cookiesString = null;
+        if(cookies != null)
+        {
+            for(int i = 0; i < cookies.length; i++)
+                cookiesString = (new StringBuilder()).append(cookies[i].getName()).append("=").append(cookies[i].getValue()).append("; ").toString();
+
+        }
+      //  urlConn.setRequestProperty("Cookie", cookiesString);
+        DataInputStream input = new DataInputStream(urlConn.getInputStream());
+        reader = new BufferedReader(new InputStreamReader(input));
+        boolean foundLine = false;
+        String temp = null;
+        do
+        {
+            if((temp = reader.readLine()) == null)
+                break;
+            if(!temp.contains("type=\"hidden\" name=\"redirect\" value=\"index.php\""))
+                continue;
+            foundLine = true;
+            break;
+        } while(true);
+        if(!foundLine)
+            return null;
+          String vl = reader.readLine();
+            String returnValue = vl.split(" ")[3].split("=")[1].replace("\"", "");
+            vl = reader.readLine();
+            String hexValueName = vl.split(" ")[2].split("=")[1].replace("\"", "");
+            List hFields = new ArrayList();
+            hFields.add(returnValue);
+            hFields.add(hexValueName);
+            String s = urlConn.getHeaderField("Set-Cookie");
+            if(s != null)
+            {
+                String d[] = s.split("=");
+                String c[] = d[1].split(";");
+                hFields.add((new StringBuilder()).append(d[0]).append("=").append(c[0]).toString());
+            }
+            return hFields;
+        }catch(Exception ioe)
+        {
+            ioe.printStackTrace();
+            KrawlerLog.op.error(ioe, ioe);
+            return null;
+        }
+    }
+
+    public boolean authPhpbb(HttpServletRequest servRequest, HttpServletResponse servResponse)
+    {
+        try
+        {
+      
+        List hashVals;
+        URL url;
+        URLConnection urlConn;
+        DataOutputStream printout;
+        Cookie cookies[];
+        String cookiesString;
+        String sid;
+        String useragent;
+        String ip;
+        String content;
+            hashVals = getloginHidFields(servRequest);
+            if(hashVals == null)
+                return false;
+      
+        url = new URL(URLUtil.baseForumURL + "login.php?");
+        urlConn = url.openConnection();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        useragent = servRequest.getHeader("User-agent");
+        ip = servRequest.getHeader("X-REAL-IP");
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        urlConn.setRequestProperty("User-Agent", useragent);
+        cookies = servRequest.getCookies();
+        cookiesString = null;
+        if(cookies != null)
+        {
+            for(int i = 0; i < cookies.length; i++)
+                cookiesString = (new StringBuilder()).append(cookies[i].getName()).append("=").append(cookies[i].getValue()).append("; ").toString();
+
+        }
+        if(hashVals.size() > 2)
+        {
+            cookiesString = (new StringBuilder()).append(cookiesString).append((String)hashVals.get(2)).toString();
+            Cookie k = new Cookie(((String)hashVals.get(2)).split("=")[0], ((String)hashVals.get(2)).split("=")[1]);
+            k.setPath("/");
+            servResponse.addCookie(k);
+        }
+        urlConn.setRequestProperty("Cookie", cookiesString);
+        String uid = servRequest.getSession().getAttribute("phpbbid").toString();
+        sid = ((String)hashVals.get(0)).replace("=", "%3D");
+        useragent = servRequest.getHeader("User-agent");
+        if(ip ==null){
+           ip = servRequest.getRemoteAddr();
+        }
+        printout = new DataOutputStream(urlConn.getOutputStream());
+        String authKey ="JGhSaU4xdkAkLnBAdFdhckRoQG4=";
+        content = "sid="+sid+"&ip="+ip+"&useragent="+useragent+"&uid="+uid+"&"+(String)hashVals.get(1)+"=Login&authKey="+authKey;
+        printout.writeBytes(content);
+        printout.flush();
+        printout.close();
+        
+        urlConn.getInputStream().close();
+        return true;
+        }catch(Exception ex){
+            System.out.print(ex);
+        }
+        return true;
+    }
+
+    public boolean logoutphpbb(HttpServletRequest servRequest, HttpServletResponse servResponse)
+    {
+        try{
+        URL url;
+        URLConnection urlConn;
+        DataOutputStream printout;
+        String content;
+        url = new URL(URLUtil.baseForumURL + "logout.php");
+        urlConn = url.openConnection();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        printout = new DataOutputStream(urlConn.getOutputStream());
+        String uid = servRequest.getSession().getAttribute("phpbbid").toString();
+        String ip = servRequest.getHeader("X-REAL-IP");
+        if(ip ==null){
+            ip = servRequest.getRemoteAddr();
+        }
+        String useragent = servRequest.getHeader("User-agent");
+        String authKey ="JGhSaU4xdkAkLnBAdFdhckRoQG4=";
+        content = "uid="+uid+"&ip="+ip+"&useragent="+useragent+"&authKey="+authKey;
+        printout.writeBytes(content);
+        printout.flush();
+        printout.close();
+        urlConn.getInputStream().close();
+        return true;
+        }catch(Exception ex){
+            System.out.print(ex);
+        }
+        return false;
+    }
+    
+    public boolean editUserDomain(String new_domain,String old_domain)
+    {
+        try{
+        URL url;
+        URLConnection urlConn;
+        DataOutputStream printout;
+        String content;
+        url = new URL(URLUtil.baseForumURL + "edituser.php");
+        urlConn = url.openConnection();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        printout = new DataOutputStream(urlConn.getOutputStream());
+        String authKey ="JGhSaU4xdkAkLnBAdFdhckRoQG4=";
+        content = "old_domain="+old_domain+"&new_domain="+new_domain+"&authKey="+authKey;
+        printout.writeBytes(content);
+        printout.flush();
+        printout.close();
+        urlConn.getInputStream().close();
+        return true;
+        }catch(Exception ex){
+            System.out.print(ex);
+            return false;
+        }
+        
+    }
+
+    public boolean deleteUserDomain(String username)
+    {
+        try{
+        URL url;
+        URLConnection urlConn;
+        DataOutputStream printout;
+        String content;
+        url = new URL(URLUtil.baseForumURL+"deleteuser.php");
+        urlConn = url.openConnection();
+        urlConn.setDoInput(true);
+        urlConn.setDoOutput(true);
+        urlConn.setUseCaches(false);
+        urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        printout = new DataOutputStream(urlConn.getOutputStream());
+        String authKey ="JGhSaU4xdkAkLnBAdFdhckRoQG4=";
+        content = "userid="+username+"&authKey="+authKey;
+        printout.writeBytes(content);
+        printout.flush();
+        printout.close();
+        urlConn.getInputStream().close();
+        return true;
+        }catch(Exception ex){
+            System.out.print(ex);
+            return false;
+        }
+        
+    }
+    
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+               
+                        
+                authPhpbb(request, response);
+        
+        
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+        processRequest(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException
+    {
+        processRequest(request, response);
+    }
+
+    public String getServletInfo()
+    {
+        return "Short description";
+    }
+}

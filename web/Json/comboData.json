@@ -1,0 +1,129 @@
+{
+	country :
+	 {data:
+		 [
+			{name:'Afganistan'},
+			{name:'Aland Island'},
+			{name:'India'},
+			{name:'America'}
+		 ] 
+	 },
+	 
+	timezone :
+	  {data:
+	  
+		[
+			{name:'(GMT+05:30)Indian Standard Time'}
+		]
+	  }	,
+	  
+	dupdata:
+	  {
+	    data:
+	    [
+			{name:'Busy'},
+			{name:'Tentative'},
+			{name:'Out of Office'}
+	    ]
+	  },
+	 
+	dupmark:
+	 {
+	   data:
+	     [
+				{name:'High'},
+				{name:'Moderate'},
+				{name:'Low'}
+				     
+	     ]
+	 },
+	
+	dupReminder:
+	 {
+	   data:
+	     [
+				{name:'none'},
+				{name:'E-mail'},
+				{name:'Pop up'}	     
+	     ]
+	 },
+	 
+	 dupReminTime:
+	  {
+	   data:
+	     [
+			{name:'5 minutes'},
+			{name:'10 minutes'},
+			{name:'15 minutes'},
+			{name:'30 minutes'},
+			{name:'1 hour'},
+			{name:'2 hour'},
+			{name:'5 hour'},
+			{name:'12 hour'},
+			{name:'1 day'},
+			{name:'2 day'},
+			{name:'1 week'}					     
+	     ]
+	  },
+	  
+	 duptime:
+	  {
+	    data:
+	     [
+			{name:'12 AM'},
+			{name:'1 AM'},
+			{name:'2 AM'},
+			{name:'3 AM'},
+			{name:'4 AM'},
+			{name:'5 AM'},
+			{name:'6 AM'},
+			{name:'7 AM'},
+			{name:'8 AM'},
+			{name:'9 AM'},
+			{name:'10 AM'},
+			{name:'11 AM'},
+			{name:'12 AM'},
+			{name:'1 pM'},
+			{name:'2 pM'},
+			{name:'3 pM'},
+			{name:'4 pAM'},
+			{name:'5 pM'},
+			{name:'6 pM'},
+			{name:'7 pM'},
+			{name:'8 pM'},
+			{name:'9 pM'},
+			{name:'10 pM'},
+			{name:'11 pM'}
+			
+	      
+	     ]
+	  } ,
+	  
+	  
+	 dummyData:
+	  {
+	    data:
+	     [
+		    {name:'',value:''},
+			{name:'8 AM',value:""},
+			{name:'9 AM',value:""},
+			{name:'10 AM',value:""},
+			{name:'11 AM',value:""},	
+		    {name:'Noon',value:""},
+			{name:'1 PM',value:""},
+			{name:'2 PM',value:""},
+			{name:'3 PM',value:""},
+			{name:'4 PM',value:""},
+			{name:'5 PM',value:""},
+			{name:'6 PM',value:""},
+			{name:'7 PM',value:""},
+			{name:'8 PM',value:""},
+			{name:'9 PM',value:""},
+			{name:'10 PM',value:""},
+			{name:'11 PM',value:""}	     
+	     
+	     ]
+	  } 
+
+}
+

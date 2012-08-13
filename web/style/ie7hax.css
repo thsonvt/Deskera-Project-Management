@@ -1,0 +1,253 @@
+/*view.css*/
+#pmessage {
+    float: left;
+}
+
+#calpanel {
+    float: left;
+}
+
+#docpanel {
+    float: left;
+}
+.divider {
+    border-bottom:1px solid #D8DFEA;
+    margin:12px 0px 0px;
+}
+/*projChart.css*/
+/*.x-grid3-row {
+    height: 19px;
+}*/
+/* Following classes for project reports*/
+.reportGridHide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 2000;
+    background-color: white;
+}
+
+.reportGridShow{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 2000;
+    background-color: white;
+}
+
+.radContainer {
+/*    padding-left: 5px;*/
+/*    margin-left: 25px;*/
+    margin-top: 9px;
+}
+
+.x-panel-tl {
+    display: none;
+}
+
+.centerCalDview {
+    height: 100% !important;
+}
+
+.labelAlign{
+    font-size:11px;
+    margin-left:3px;
+}
+
+.padd {
+    margin-top: 0;
+    margin-right: 110px;
+}
+
+
+.calevtPanel {
+    position: relative;
+}
+
+.searchleftbutton {
+    margin-top: 2px !important;
+}
+
+.searchrightbutton table{
+    margin-top: 2px !important;
+}
+
+.searchInput {
+    margin-top: 1px !important;
+}
+
+.daycompCell {
+    height: 28px;
+}
+
+.OneDayPanel {
+    width: 14.2%;
+}
+
+.innerDiv {
+    width: 14.2%;
+}
+
+.dportlet {
+    width: 49.9%;
+}
+.dportletfull {
+    width: 99.9%;
+}
+
+/*fix for field lable and input */
+.x-form-element {
+        position:static !important;
+}
+ .x-form-element div , .x-form-text  {
+        position:static !important;
+}
+.x-form-item label {
+    position:static !important;
+}
+.x-form-field-wrap img {
+    position:static !important;
+    vertical-align:middle;
+    
+}
+.x-panel-tbar .x-btn button{
+    width:16px !important;  /*changed by shri to fix buttons with icons*/
+    text-align:left !important;
+}
+.x-panel-tbar .x-btn-center{
+    text-align:left !important;
+}
+/* fix for datre picker image appearing misaligned  */
+.x-form-trigger{
+        position:fixed !important;
+        vertical-align:top !important;
+        top: -3;
+}
+.x-form-arrow-trigger{
+        position:fixed !important;
+        vertical-align:top !important;
+        top: -3;
+}
+.x-form-date-trigger{
+        position:fixed !important;
+        vertical-align:top !important;
+        top: -3;
+}
+
+#dashhelp .helpHeader {
+    color:#35332a;
+    padding-left: 1% !important;
+    padding-bottom:0.5% !important;
+}
+#dashhelp .helpContent {
+    color:#676655;
+    padding-left: 1% !important;
+    font-size:10px;
+}
+.checkboxtext{
+    float: left;
+    width: 185px;
+    padding-top:1px;
+    padding-left: 77%;
+}
+#fcue-close{
+    visibility:visible !important;
+}
+.to-Do-duedate{
+    width:80px !important;
+}
+.to-Do-duedateCont img, .todoComboCont img{
+    height:18px !important;
+}
+.to-Do-taskname{
+    width:155px !important;
+}
+.docTagTextBox{
+    margin-right: 0px;
+    position: relative !important;
+    top: 1px;
+}
+.bttn{
+    position: relative;
+    bottom: 20%;
+    right: 10px;
+    left: 140px;
+    top: 1px;
+}
+.hideFormField{
+    display: none;
+}
+.compInfoFields{
+    padding-bottom: 8px;
+}
+#notificationcheck{
+    width: 14px !important;
+}
+.x-menu-list .x-color-palette {
+    width: 135px !important;
+    height: auto !important;
+}
+.workspace{
+    margin:2px 0px;
+}
+.tagsMainDiv{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.reportmenuicon{
+    background-position: 0 -1058px !important;
+}
+.sibContDiv{
+    margin-bottom: 0px;
+}
+.companyFieldSet {
+    padding-top: 16px !important;
+}
+.acceptreject {
+    width:16px;
+    height:16px;
+    margin-top: -15px;
+}
+#tabdashboard .x-column-inner {
+    width: 98.5% !important;
+}
+.listComboCss{
+    width: 178px;
+}
+.calComboCss{
+    width: 178px;
+}
+.radPanel {
+    padding-left: 8px;
+    padding-top:  4px;
+    margin-top: -12px;
+    font: 12px tahoma,arial,helvetica,sans-serif;
+}
+.permFieldSet {
+    margin-top: 0px;
+    border: none !important;
+}
+.projectchartdiv{
+    height: 30% !important;
+}
+.msBar{
+    margin-bottom: 0;
+}
+.msOuter{
+    width: 96.2%;
+}
+.msMarkersWrapper{
+    margin-top: -16px;
+}
+.notifCheckText{
+    margin-top: -16px;
+    width: 87%;
+}

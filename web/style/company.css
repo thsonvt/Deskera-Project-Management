@@ -1,0 +1,16 @@
+.newitemwin {
+    width: 650px !important;
+    border: none;
+}
+
+.newaccwin {
+    height: auto;
+    width: 325px !important;
+    border: none;
+}
+
+.newstaxwin {
+    height: auto;
+    width: 325px !important;
+    border: none;
+}

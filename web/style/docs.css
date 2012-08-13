@@ -1,0 +1,294 @@
+.permFieldSet{
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.permFieldSetNoBorder-header-text, .permFieldSet-header-text{
+    font-weight: bold;
+}
+.permFieldSetNoBorder{
+    border: none !important;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.moveToLeft{
+    background-image: url(../images/arrowleft.gif);
+}
+.moveToRight{
+    background-image: url(../images/arrowright.gif);
+}
+.navButtons{
+    margin: 8px auto auto auto;
+}
+.navigateButton{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.resetArrow {
+    margin: 5% 0% 7% 32% !important;
+    cursor: pointer;
+}
+
+.ascls, .ascls1 {
+    height: 100% !important;
+    width: 100%;
+}
+
+.ascls-body {
+    height: 85% !important;
+}
+
+.ascls-bwrap, .ascls1-bwrap, .docGrid {
+    height: 100%;
+}
+
+.ascls1-panel-bwrap {
+    height: 96%;
+}
+
+#file1div .x-panel-bwrap, #file2div .x-panel-bwrap, .containerdiv-panel-bwrap {
+    height: 0 !important
+}
+
+.ascls1-body {
+    height: 100% !important;
+}
+
+.spanelement {
+    padding: 0;
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    position: relative;
+    float: left;
+}
+
+.txt {
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+}
+
+.bttn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.textarea, .selectdivnone {
+    display: none;
+}
+
+.back_image_open {
+    background-image: url('../images/YellowOpenedFolder.gif') !important;
+}
+
+.back_image_close {
+    background-image: url('../images/YellowClosedFolder.gif') !important;
+}
+
+.Openfile{
+    background-position: 0 -1130px !important;
+}
+
+.OpenfileCx{
+    background-position: 0 -1132px !important;
+}
+
+.showgrp {
+    background-position: 0 -1394px !important;
+}
+
+.arrange {
+    background-position: 0 -1442px !important;
+}
+
+.class1 {
+    display: block;
+}
+
+.iconwin {
+    background-image: url('../images/deskera.png') !important;
+}
+
+.button {
+    margin: 10px;
+}
+
+.checked {
+     background-position: 0 -1975px !important;
+}
+
+.stopicon{
+     background-position: 0 -919px !important;
+}
+
+.none {
+    background-image: url('none');
+}
+
+.permicon {
+    background-position: 0 -121px !important;
+}
+
+.announceicon {
+    background-position: 0 -1899px !important;
+}
+
+.rtclickper {
+    background-position: 0 -860px !important;
+}
+
+.statusicon {
+    background-position: 0 -840px !important;
+}
+
+.renameicon {
+    background-position: 0 -1155px !important;
+}
+
+.maintabs, .gridobj {
+    height: 100%;
+    width: 100% !important;
+}
+
+.docscom-bwrap {
+    height: 95% !important;
+    width: 100% !important;
+}
+
+.docscom-body, .docscom {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.docbutton {
+    float: right;
+    margin: 0 3px 0 0;
+}
+
+.x-grid-group-hd {
+    background: url(../images/sectionborder.gif) no-repeat -9px bottom !important;
+    border: none !important;
+}
+
+.dldicon {
+    background-position: 0 -1996px !important;
+}
+
+.dldiconwt {
+    background-position: 0 -1996px !important;
+}
+
+.RevisionList {
+    background-position: 0 -1394px !important;
+}
+
+.lblSearch {
+    color: #666666;
+    font-weight: 700;
+    font-size: large;
+    vertical-align: text-top;
+}
+
+.lblSearch input {
+    color: #333333;
+    font-weight: 100;
+    font-size: medium;
+    padding: 1px;
+    height: 19px;
+    width: 20%;
+}
+
+.btnsearch {
+    background: url('../lib/resources/images/default/form/search-trigger.gif') no-repeat scroll 2px 30% !important;
+}
+
+.btnMailSearch {
+    background-position: 0 -1060px !important;
+}
+
+.tbar {
+    margin-left: -4px;
+    margin-top: 0.6%;
+    padding-top: 6px;
+    width: 102% !important;
+}
+
+.cregion {
+    margin: 0;
+    padding: 0;
+    background: url('../images/bg3.png') no-repeat;
+}
+
+.snippet {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    padding: 0;
+    font-weight: 700;
+    vertical-align: text-top;
+}
+
+.txtSearchSnippet {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.searching {
+    background-image: url('../images/1-1.gif') !important;
+}
+
+.fileinfo {
+    position: absolute;
+    left: 60px;
+    /*top:27px;*/
+    padding: 0;
+    font-weight: 400;
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+.docHdr {
+    font-size: 8pt;
+    height: 32px;
+    background-color: #6187B9;
+    color: white;
+	padding-left: 8px;
+}
+
+.docHdrTxt {
+   	float: left;
+    width: 150px;
+	margin-top: 8px;
+	margin-right: 16px;
+}
+
+.docHdrTxt .sb, .docHdrTxt .st{
+	vertical-align: top;
+}
+
+.docHdrTxt .sb{
+	font-weight: bold;
+}
+
+.docTagDiv{
+    width: 80%;
+    height: 75%;
+    display: none;
+    float: left;
+}
+
+.docTagTextBox{
+    bottom:10px;
+    position:absolute;
+    right:80px;
+    float: right;
+    margin-right: 10px;
+}
+.shareicon{
+    background-position: 0 -241px !important;
+}

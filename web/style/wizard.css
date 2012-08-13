@@ -1,0 +1,49 @@
+/*
+    Document   : wizard.css
+    Created on : Nov 4, 2009, 10:08:31 AM
+    Author     : trainee
+    Description:
+        For Wizard Window.
+*/
+
+root {
+    display: block;
+}
+
+﻿.wtf-common-wizard-Header {
+	background-color:white;
+	border-bottom:1px solid #99BBE8;
+}
+
+.wtf-common-wizard-Header-title {
+	font-weight: bold;
+	padding: 4px 0px 0px 4px;
+}
+
+.wtf-common-wizard-Header-step {
+	color:#767676;
+	text-align:right;
+	padding:2px 4px 0px 0px;
+}
+
+.wtf-common-wizard-Header-stepIndicator-container {
+	float:right;
+	margin-right:6px;
+	margin-top:8px;
+}
+
+.wtf-common-wizard-Header-stepIndicator {
+	margin-left:28px;
+	float:left;
+	background-image:url(../images/wiz-stepIndicator.png);
+	background-position:6px 0px;
+	background-repeat:repeat-x;
+	height:6px;
+	width:6px;
+}
+
+.wtf-common-wizard-Header-stepIndicator-active {
+	background-position:0px 0px !important;
+}
+
+

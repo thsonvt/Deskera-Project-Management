@@ -1,0 +1,17 @@
+.mainTabPanel {
+    height: 100%;
+    width: 100%;
+}
+
+.chartwrap {
+    height: 310px;
+    text-align: center;
+}
+
+.chartImg {
+    margin-top: 12%;
+}
+
+.chartImg2 {
+    margin-top: 0;
+}

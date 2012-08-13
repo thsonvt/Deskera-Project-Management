@@ -1,0 +1,71 @@
+.tags {
+    background-image: url(../images/tag_green.gif) !important;
+}
+
+.applycreditbtn {
+    padding: 0 13px 0 0 !important;
+    /*line-height: -5px;*/
+}
+
+.reportRefresh {
+    background-image: url(../images/Refresh.gif) !important;
+}
+
+.reportrefreshbtn {
+    padding: 9px 0 0 0 !important;
+    float:left;
+    width:35px;
+}
+
+.x-panel-bbar .x-toolbar div .x-panel-bbar .x-toolbar {
+    border-color: -moz-use-text-color #99BBE8 rgb( 153, 187, 232 );
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    float: right;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.hideError {
+    display: none;
+}
+
+.showError {
+    display: block;
+    height: 15px;
+    float: left;
+    width: 200px;
+    border: 1px solid black;
+    font-family: tahoma;
+    font-size: 10px;
+    color: red;
+    padding-left: 5px;
+    width: 280px;
+}
+
+.defaulttext {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.imgtext {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.plus {
+    background: url('../lib/resources/images/default/tree/elbow-plus-nl.gif') no-repeat;
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-position: center;
+}
+
+.minus {
+    background: url('../lib/resources/images/default/tree/elbow-minus-nl.gif') no-repeat;
+    width: 10px;
+    height: 10px;
+    float: left;
+    display: none;
+    background-position: center;
+}

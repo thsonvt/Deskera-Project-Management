@@ -1,0 +1,6 @@
+{data: [
+    {cname:'Ajay', phone:'123456',email:'a@a.com'},
+    {cname:'Sagar', phone:'123456',email:'s@s.com'},
+    {cname:'Ravi', phone:'123456',email:'r@r.com'}
+]
+}

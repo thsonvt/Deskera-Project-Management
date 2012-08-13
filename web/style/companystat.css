@@ -1,0 +1,43 @@
+.kwlAdminTab .noBorder{
+    border: none !important;
+}
+.kwlAdminTab .noBorder:hover {
+    background-color: white !important;
+}
+.kwlAdminTab h2{
+    color:#224477;
+    font-size:1.5em;
+    text-align:center;
+}
+.seperator{
+    background-color: #EEEEEE;
+}
+.companyHeader{
+    font-weight: bold;
+    color: black !important;
+}
+.projectTD{
+    color: black !important;
+}
+.kwlAdminTab {
+    background:#FFFFFF none repeat scroll 0%;
+    border-collapse:collapse;
+    font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    text-align:left;
+/*    width:650px;*/
+}
+.kwlAdminTab th {
+    border-bottom:2px solid #6678B1;
+    color:#003399;
+    font-weight:normal;
+    padding:10px 8px;
+}
+.kwlAdminTab td {
+    border-bottom:1px solid #CCCCCC;
+    color:#666699;
+    padding:6px 8px;
+}
+.kwlAdminTab tbody tr:hover td {
+    /*background-color: #D0DAFD;*/
+    color:#333399;
+}

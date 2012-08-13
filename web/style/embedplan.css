@@ -1,0 +1,168 @@
+/* View  */
+html, body {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-sarif;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+    font-size: 12px;
+}
+
+
+/* Project */
+.linkPanel {
+    height: 0px;
+    width: 0px;
+}
+
+.ParentTask {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: black;
+    position: absolute;
+    height: 10px;
+    line-height: 0px;
+    background: url(../images/taskParent.png)
+}
+
+#header {
+    font-size: 11px;
+    overflow: hidden;
+    padding: 5px !important;
+    border: 1px solid #99BBE8;
+    background :white none repeat scroll 0% 50%;
+}
+
+#projectname {
+    padding: 5px 0px 0px!important;
+    margin:auto;
+    font-size:16px;
+    color :#15428B;
+}
+.headerPanel {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 7181px;
+}
+
+.headerProject {
+    float: left;
+    width: 110px;
+    border-left: 0 solid #99bbe8;
+    border-right: 2px solid #99bbe8;
+    height: 30px;
+    background-image: url(../images/weekheaderimg16.png);
+}
+
+.chartPanel, .DataViewPanel {
+    height: 700px;
+    position: relative;
+}
+
+.DataViewPanel {
+    height: auto !important;
+    background: url(../images/final161.PNG) repeat;
+}
+
+.custom, .milestoneIcon {
+    position: absolute;
+    height: 10px;
+    min-height: 10px;
+}
+
+.custom {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: blue;
+    background: url(../images/finalTask.png) repeat;
+    line-height: 0px;
+    height: 10px;
+}
+
+.milestoneIcon {
+    background: url(../images/milestone.gif);
+    border: none;
+}
+
+.ganttChart {
+    height: auto !important;
+/*    width: 7167px !important;*/
+}
+
+.charteastPane {
+    padding-bottom: 7px !important;
+}
+/* this is done to fix the scroll in ie gte 6 as well as firefox*/
+.scrollPanel {
+    position: relative;
+}
+
+.x-grid-editor, .scrollPanel .x-panel-body, .scrollPanel .x-panel-bwrap {
+    position: relative !important;
+}
+
+.x-grid-editor {
+    float: left !important;
+}
+
+.imgcls {
+    width: 10%;
+    float: left;
+}
+
+.defaulttext {
+    /*float: left;*/
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.imgtext {
+    /*float: left;*/
+    margin-left: 3px;
+    /*font-weight: bold;*/
+}
+
+.parentRow td, .parentRow tr {
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.plus, .minus, .Dminus {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-right: 5px;
+}
+
+.minus, .Dminus, .forum_minus {
+    background: url('../lib/resources/images/default/tree/elbow-minus-nl.gif') no-repeat center;
+}
+
+.plus, .forum_plus {
+    background: url('../lib/resources/images/default/tree/elbow-plus-nl.gif') no-repeat center;
+}
+
+.minus {
+    display: none;
+}
+
+.Dminus {
+    display: block;
+}
+
+.projectTabIcon {
+    background-position: 0 -237px !important;
+}
+
+.pwnd {
+    background: url(../images/tbar.gif) no-repeat !important;
+}
+
+.x-grid3 table {
+    table-layout:fixed;
+}
+.graphbg{
+    background-color: #FFFFFF !important;
+}

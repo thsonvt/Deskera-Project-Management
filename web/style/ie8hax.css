@@ -1,0 +1,101 @@
+/* 
+    Document   : ie8hax
+    Created on : Aug 20, 2009, 11:40:30 AM
+    Author     : bala
+    Description:
+        Style sheet specifically for IE8
+*/
+
+.x-menu{
+    width: auto !important;
+}
+.x-date-menu > ul{
+    display: inline;
+}
+
+.x-date-menu > ul li{
+    display: inline;
+}
+.outerHelp {
+    padding-bottom:0.3% !important;
+}
+.wtf-ie .x-form-text {
+    top:1px !important;
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+#dashhelp .helpHeader {
+    color:#35332a;
+}
+#dashhelp .helpContent {
+    color:#676655;
+    padding-left: 11% !important;
+}
+#fcue-close{
+    visibility:visible !important;
+}
+.to-Do-duedate{
+    width:80px !important;
+}
+.to-Do-duedateCont img, .todoComboCont img{
+    height:18px !important;
+}
+.to-Do-taskname{
+    width:155px !important;
+}
+
+.searchleftbutton {
+    margin-top: 2px !important;
+}
+
+.searchrightbutton table{
+    margin-top: 2px !important;
+}
+
+/*.descArea{
+    height: 110px !important;
+}*/
+.docTagTextBox{
+    margin-right: 0px;
+    top:60% !important;
+    position: relative;
+}
+.bttn{
+    position: relative;
+    bottom: 20%;
+    right: 10px;
+    left: 140px;
+    top: 1px;
+}
+#notificationcheck{
+    width: 14px !important;
+}
+.reportmenuicon{
+    background-position: 0 -1058px !important;
+}
+.calComboCss{
+    width : 178px;
+}
+.listComboCss{
+    width : 178px;
+}
+.radPanel {
+    padding-left: 8px;
+    padding-top:  4px;
+    margin-top: -12px;
+    font: 12px tahoma,arial,helvetica,sans-serif;
+}
+.x-menu-list .x-color-palette {
+    width: 135px !important;
+    height: auto !important;
+}
+.msDates{
+    vertical-align: top;
+    height: 30px;
+}
+td.msTD{
+    height: 30px;
+}
+.msBar{
+    margin-bottom: 15px;
+}

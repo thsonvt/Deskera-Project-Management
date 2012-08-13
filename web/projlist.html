@@ -1,0 +1,19 @@
+<script type="text/javascript">
+//<![CDATA[
+	var tabMyProjects = Wtf.getCmp("tabproject");
+	if(tabMyProjects){
+    	var panelviewsprojects = new Wtf.PanelView({
+        	id: "panelview_myprojects",
+        	layout: "fit",
+                archived : false, 
+        	border: false,
+        	uid: new Wtf.common.Uid("project", Wtf.etype.proj),
+        	tabType: Wtf.etype.proj
+    	});
+
+    	tabMyProjects.add(panelviewsprojects);
+    	tabMyProjects.doLayout();
+    	panelviewsprojects.loadData();
+	}
+//]]>
+</script>

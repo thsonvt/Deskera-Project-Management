@@ -1,0 +1,17 @@
+<script type="text/javascript">
+//<![CDATA[
+	var tabMyFriends = Wtf.getCmp("tabfriends");
+	if(tabMyFriends){
+    	var panelviewsfriends = new Wtf.PanelView({
+        	id: "panelview_myfriends",
+        	layout: "fit",
+        	border: false,
+        	uid: new Wtf.common.Uid("friends", Wtf.etype.user),
+        	tabType: Wtf.etype.user
+    	});
+    	tabMyFriends.add(panelviewsfriends);
+    	tabMyFriends.doLayout();
+    	panelviewsfriends.loadData();
+	}
+//]]>
+</script>

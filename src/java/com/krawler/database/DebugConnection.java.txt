@@ -1,0 +1,273 @@
+package com.krawler.database;
+
+import java.sql.Array;
+import java.sql.Blob;
+import java.sql.CallableStatement;
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.NClob;
+import java.sql.PreparedStatement;
+import java.sql.SQLClientInfoException;
+import java.sql.SQLException;
+import java.sql.SQLWarning;
+import java.sql.SQLXML;
+import java.sql.Savepoint;
+import java.sql.Statement;
+import java.sql.Struct;
+import java.util.Map;
+import java.util.Properties;
+
+import com.krawler.common.util.KrawlerLog;
+
+class DebugConnection implements Connection {
+
+    private Connection mConn;
+    
+    DebugConnection(Connection conn) {
+        mConn = conn;
+    }
+    
+    public Statement createStatement() throws SQLException {
+        return mConn.createStatement();
+    }
+
+    public PreparedStatement prepareStatement(String sql) throws SQLException {
+        return new DebugPreparedStatement(mConn.prepareStatement(sql), sql);
+    }
+
+    public CallableStatement prepareCall(String sql) throws SQLException {
+        return mConn.prepareCall(sql);
+    }
+
+    public String nativeSQL(String sql) throws SQLException {
+        return mConn.nativeSQL(sql);
+    }
+
+    public void setAutoCommit(boolean autoCommit) throws SQLException {
+        mConn.setAutoCommit(autoCommit);
+    }
+
+    public boolean getAutoCommit() throws SQLException {
+        return mConn.getAutoCommit();
+    }
+
+    public void commit() throws SQLException {
+        KrawlerLog.sqltrace.debug("commit, conn=" + mConn.hashCode());
+        mConn.commit();
+    }
+
+    public void rollback() throws SQLException {
+        KrawlerLog.sqltrace.debug("rollback, conn=" + mConn.hashCode());
+        mConn.rollback();
+    }
+
+    public void close() throws SQLException {
+        mConn.close();
+    }
+
+    public boolean isClosed() throws SQLException {
+        return mConn.isClosed();
+    }
+
+    public DatabaseMetaData getMetaData() throws SQLException {
+        return mConn.getMetaData();
+    }
+
+    public void setReadOnly(boolean readOnly) throws SQLException {
+        mConn.setReadOnly(readOnly);
+    }
+
+    public boolean isReadOnly() throws SQLException {
+        return mConn.isReadOnly();
+    }
+
+    public void setCatalog(String catalog) throws SQLException {
+        mConn.setCatalog(catalog);
+    }
+
+    public String getCatalog() throws SQLException {
+        return mConn.getCatalog();
+    }
+
+    public void setTransactionIsolation(int level) throws SQLException {
+        mConn.setTransactionIsolation(level);
+    }
+
+    public int getTransactionIsolation() throws SQLException {
+        return mConn.getTransactionIsolation();
+    }
+
+    public SQLWarning getWarnings() throws SQLException {
+        return mConn.getWarnings();
+    }
+
+    public void clearWarnings() throws SQLException {
+        mConn.clearWarnings();
+    }
+
+    public Statement createStatement(int resultSetType, int resultSetConcurrency)
+    throws SQLException {
+        return mConn.createStatement(resultSetType, resultSetConcurrency);
+    }
+
+    public PreparedStatement prepareStatement(String sql, int resultSetType,
+                                              int resultSetConcurrency)
+    throws SQLException {
+        return new DebugPreparedStatement(
+            mConn.prepareStatement(sql, resultSetType, resultSetConcurrency), sql);
+    }
+
+    public CallableStatement prepareCall(String sql, int resultSetType, int resultSetConcurrency)
+    throws SQLException {
+        return mConn.prepareCall(sql, resultSetType, resultSetConcurrency);
+    }
+
+    public Map getTypeMap() throws SQLException {
+        return mConn.getTypeMap();
+    }
+
+    public void setTypeMap(Map map) throws SQLException {
+        mConn.setTypeMap(map);
+    }
+
+    public void setHoldability(int holdability) throws SQLException {
+        mConn.setHoldability(holdability);
+    }
+
+    public int getHoldability() throws SQLException {
+        return mConn.getHoldability();
+    }
+
+    public Savepoint setSavepoint() throws SQLException {
+        return mConn.setSavepoint();
+    }
+
+    public Savepoint setSavepoint(String name) throws SQLException {
+        return mConn.setSavepoint(name);
+    }
+
+    public void rollback(Savepoint savepoint) throws SQLException {
+        mConn.rollback(savepoint);
+    }
+
+    public void releaseSavepoint(Savepoint savepoint) throws SQLException {
+        mConn.releaseSavepoint(savepoint);
+    }
+
+    public Statement createStatement(int resultSetType, int resultSetConcurrency,
+                                     int resultSetHoldability)
+    throws SQLException {
+        return mConn.createStatement(
+            resultSetType, resultSetConcurrency, resultSetHoldability);
+    }
+
+    public PreparedStatement prepareStatement(String sql, int resultSetType,
+                                              int resultSetConcurrency,
+                                              int resultSetHoldability)
+    throws SQLException {
+        return new DebugPreparedStatement(
+            mConn.prepareStatement(sql, resultSetType,
+                resultSetConcurrency, resultSetHoldability), sql);
+    }
+
+    public CallableStatement prepareCall(String sql, int resultSetType,
+                                         int resultSetConcurrency,
+                                         int resultSetHoldability)
+    throws SQLException {
+        return mConn.prepareCall(sql, resultSetType, resultSetConcurrency,
+            resultSetHoldability);
+    }
+
+    public PreparedStatement prepareStatement(String sql, int autoGeneratedKeys)
+    throws SQLException {
+        return new DebugPreparedStatement(
+            mConn.prepareStatement(sql, autoGeneratedKeys), sql);
+    }
+
+    public PreparedStatement prepareStatement(String sql, int[] columnIndexes)
+    throws SQLException {
+        return new DebugPreparedStatement(
+            mConn.prepareStatement(sql, columnIndexes), sql);
+    }
+
+    public PreparedStatement prepareStatement(String sql, String[] columnNames)
+    throws SQLException {
+        return new DebugPreparedStatement(
+            mConn.prepareStatement(sql, columnNames), sql);
+    }
+
+    /* brajesh: added @ 20071203
+     * following 18 overrides are required to port to java 6
+     */
+	@Override
+	public Array createArrayOf(String arg0, Object[] arg1) throws SQLException {
+		return mConn.createArrayOf(arg0, arg1);
+	}
+
+	@Override
+	public Blob createBlob() throws SQLException {
+		return mConn.createBlob();
+	}
+
+	@Override
+	public Clob createClob() throws SQLException {
+		return mConn.createClob();
+	}
+
+	@Override
+	public NClob createNClob() throws SQLException {
+		return mConn.createNClob();
+	}
+
+	@Override
+	public SQLXML createSQLXML() throws SQLException {
+		return mConn.createSQLXML();
+	}
+
+	@Override
+	public Struct createStruct(String arg0, Object[] arg1) throws SQLException {
+		return mConn.createStruct(arg0, arg1);
+	}
+
+	@Override
+	public Properties getClientInfo() throws SQLException {
+		return mConn.getClientInfo();
+	}
+
+	@Override
+	public String getClientInfo(String arg0) throws SQLException {
+		return mConn.getClientInfo(arg0);
+	}
+
+	@Override
+	public boolean isValid(int arg0) throws SQLException {
+		return mConn.isValid(arg0);
+	}
+
+	@Override
+	public void setClientInfo(Properties arg0) throws SQLClientInfoException {
+		mConn.setClientInfo(arg0);
+	}
+
+	@Override
+	public void setClientInfo(String arg0, String arg1)
+			throws SQLClientInfoException {
+		mConn.setClientInfo(arg0, arg1);
+	}
+/*
+	@Override
+	public void setTypeMap(Map<String, Class<?>> arg0) throws SQLException {
+		mConn.setTypeMap(arg0);
+	}
+*/
+	@Override
+	public boolean isWrapperFor(Class<?> arg0) throws SQLException {
+		return mConn.isWrapperFor(arg0);
+	}
+
+	@Override
+	public <T> T unwrap(Class<T> arg0) throws SQLException {
+		return mConn.unwrap(arg0);
+	}
+}

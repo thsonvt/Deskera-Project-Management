@@ -1,0 +1,1224 @@
+.exportpdfbut{
+    margin-left:40%;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.customFieldSet {
+    margin-left: 7% !important;
+    margin-right: 10% !important;
+    margin-top: 5px !important;
+    width: 80%;
+}
+.adjustColWidth {
+    margin-left: 28% !important;
+    margin-top: 7px !important;
+ }
+.reportContainerDiv{
+    margin: 20px auto auto auto;
+    width: 60% !important;
+    border: 1px solid black;
+}
+.resourceBold {
+    background:#EFFFEE none repeat scroll 0 0;
+    border-bottom:1px solid #ADD8E6;
+    color:#008645;
+    font-weight:bold;
+}
+.conflicted {
+    font-weight:bold;
+    color:#FF0000;
+    background:#FFF0F0 none repeat scroll 0 0;
+    border-bottom:1px solid #EDEDED;
+    border-top:1px solid #EDEDED;
+}
+
+.subtitleAddRemove{
+    padding-left:24% !important;
+    margin-bottom:3px;
+}
+.reportfieldContainer{
+    padding-bottom: 6px;
+    padding-left: 35% !important;
+}
+.colorCodeMenuBtn{
+    width: 125px !important;
+}
+.projectReportChartDiv{
+    width: 100%;
+    height: 100%;
+}
+.closeChartButton{
+    width: 40px;
+    height: 15px;
+    cursor: pointer;
+    float: right;
+    display: block;
+    padding-top: 7px;
+}
+.reportPanel-body {
+    position: absolute !important;
+}
+.reportGridHide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 2000;
+    background-color: white;
+}
+.reportGridShow{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 2000;
+    background-color: white;
+}
+.archivedProjIcon{
+    background-position: 0 -603px !important;
+}
+.descArea{
+    border: 1px solid #7EADD9;
+}
+.widthText{
+    padding-top: 3px !important;
+}
+.importchkbox{
+    padding-left: 10px;
+    margin-top: 0px;
+}
+.baselinechkbox{
+    padding-left: 10px;
+    margin-top: -3px;
+}
+.projectupdatepanel{
+    width: 95% !important;
+}
+.archivedProjTask{
+    cursor: default !important;
+}
+.holidayDelete{
+    color: #083772;
+    text-decoration: none;
+    height: 13px;
+    float:left;
+    margin-top: 2px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.holidayDelete:hover{
+    text-decoration: underline;
+    color: #445566;
+}
+.holidaySpan{
+    float: left;    
+    overflow:hidden;
+    margin-right: 3px;
+}
+.holidayDiv{
+    color: black;
+    display: block;
+    border-bottom: 1px solid #999999;
+    width: 300px;
+    float: left;
+    height: 0px;
+}
+.holidayspanwidth {
+    width: 150px;
+}
+.disablePanel{
+    color: #eee;
+    z-index: 9000;
+}
+.whiteBackground{
+    background-color: white;
+}
+.templateCont{
+    margin-left: 65px;
+    width: 60%;
+}
+.templateHeader{
+    font-weight: bold;
+    width: 17%;
+    display: block;
+    float: left;
+}
+.templateHeaderName{
+    font-weight: bold;
+    width: 30%;
+    display: block;
+    float: left;
+}
+.reportimg{
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    margin: auto;
+}
+.imgLabel{
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+}
+.reportimg:hover{
+    border: solid 1px black;
+}
+#Assignments{
+    background: url(../images/90/assignments.png);
+}
+#Cost{
+    background: url(../images/90/costs.png);
+}
+#Activities{
+    background: url(../images/90/current_activities.png);
+}
+#Custom{
+    background: url(../images/90/custom.png);
+}
+#Overview{
+    background: url(../images/90/overview.png);
+}
+#Workload{
+    background: url(../images/90/workload.png);
+}
+#overloadRes{
+    background: url(../images/subreports/assignments/overloadedRes.png);
+}
+#todolist{
+    background: url(../images/subreports/assignments/todolist.png);
+}
+#whowhat{
+    background: url(../images/subreports/assignments/WhoWhat.png);
+}
+#whowhatwhen{
+    background: url(../images/subreports/assignments/whoWhatWhen.png);
+}
+#criticaltask{
+    background: url(../images/subreports/overview/criticalTask.png);
+}
+#milestones{
+    background: url(../images/subreports/overview/milestones.png);
+}
+#Baseline{
+    background: url(../images/90/assignments.png);
+}
+#projSummary{
+    background: url(../images/subreports/overview/projSummary.png);
+}
+#durationCompare{
+    background: url(../images/subreports/overview/workingdays.png);
+}
+#resourceCompare{
+    background: url(../images/subreports/workload/resourceusage.png);
+}
+#resourcewiseCompare{
+    background: url(../images/subreports/workload/resourceusage.png);
+}
+#costCompare{
+    background: url(../images/subreports/cost/overbudget.png);
+}
+#dateCompare{
+    background: url(../images/subreports/overview/workingdays.png);
+}
+#resanalysis{
+    background: url(../images/subreports/workload/resourceusage.png);
+}
+#overduetask{
+    background: url(../images/subreports/overview/milestones.png);
+}
+#projsummary{
+    background: url(../images/subreports/overview/projSummary.png);
+}
+#topleveltask{
+    background: url(../images/subreports/overview/toplevelTask.png);
+}
+#workingdays{
+    background: url(../images/subreports/overview/workingdays.png);
+}
+#resourceusage{
+    background: url(../images/subreports/workload/resourceusage.png);
+}
+#taskusage{
+    background: url(../images/subreports/workload/taskusage.png);
+}
+#budget{
+    background: url(../images/subreports/cost/budget.png);
+}
+#cashflow{
+    background: url(../images/subreports/cost/cashFlow.png);
+}
+#earnedvalue{
+    background: url(../images/subreports/cost/earnedValue.png);
+}
+#overbudget{
+    background: url(../images/subreports/cost/overbudget.png);
+}
+#overbudgetres{
+    background: url(../images/subreports/cost/overbudgetRes.png);
+}
+#completetask{
+    background: url(../images/subreports/current_activity/completedtask.png);
+}
+#inprogress{
+    background: url(../images/subreports/current_activity/inprogress.png);
+}
+#shouldhavestarted{
+    background: url(../images/subreports/current_activity/shouldhavestarted.png);
+}
+#slippingtask{
+    background: url(../images/subreports/current_activity/slippingtask.png);
+}
+#startingsoon{
+    background: url(../images/subreports/current_activity/startsoon.png);
+}
+#unstartedtask{
+    background: url(../images/subreports/current_activity/unstartedtask.png);
+}
+#projectcharts{
+    background: url(../images/subreports/current_activity/startsoon.png);
+}
+.colorCode{
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+}
+.taskAqua{
+    border-color: #84b6ff;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background: url(../images/taskaqua.png) repeat;
+    height: 10px;
+}
+.linkPanel {
+    height: 0px;
+    width: 0px;
+}
+
+.browseTextField {
+    height: 19px;
+    width: 75px !important;
+}
+
+.ParentTask {
+    cursor: move;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: black;
+    position: absolute;
+    height: 10px;
+    line-height: 0px;
+/*    background-color: black;*/
+    background: url(../images/taskParent.png)
+}
+
+.taskOverDue {
+    border-color: red !important;
+    background: url(../images/overdue.png) repeat !important;
+/*    background-color: red !important;*/
+}
+
+.test {
+    border: 0 solid red;
+    font-weight: lighter;
+    background: transparent url(../lib/resources/images/default/panel/top-bottom.gif) repeat-x scroll 0 50%;
+    margin: 0;
+    padding: 0;
+    font-size: 9pt;
+}
+
+.headerPanel {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 7181px;
+}
+
+.headerProject {
+    float: left;
+    width: 110px;
+    border-left: 0 solid #99bbe8;
+    border-right: 2px solid #99bbe8;
+    height: 30px;
+    background-image: url(../images/weekheaderimg16.png);
+}
+.headerProjectWeek {
+    padding-top: 2px;
+    font-size: 8pt;
+    float: left;
+    width: 33px;
+    border-left: 0 solid #99bbe8;
+    border-right: 2px solid #99bbe8;
+    height: 30px;
+    background-image: url(../images/weekviewheaderimage.png);
+}
+
+.chartPanel, .DataViewPanel {
+/*    width: 7167px;*/
+    height: 700px;
+    position: relative;
+}
+
+.dailyView {
+    background: url(../images/final161.PNG) repeat;
+}
+.weeklyView{
+    background: url(../images/weekviewchart.png) repeat;
+}
+.chartPanelOldCursor {
+    cursor: default;
+}
+
+.chartPanelNewCursor {
+    cursor: url(../images/movecursor.cur), auto !important;
+}
+
+.containerPanel {
+    height: 100% !important;
+}
+
+.custom, .milestoneIcon, .milestoneWeekIcon{
+    cursor: move;
+    position: absolute;
+    height: 10px;
+    min-height: 10px;
+}
+
+.custom {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+/*    border-color: #84b6ff;*/
+    border-color: blue;
+/*    background-color: #3366FF;*/
+    background: url(../images/finalTask.png) repeat;
+/*    background: url(../images/taskaqua.png) repeat;*/
+    line-height: 0px;
+    height: 10px;
+}
+
+.slacktask {
+    cursor: default;
+    position: absolute;
+    min-height: 3px;
+}
+
+.slacktask {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: green;
+    background: url(../images/green-bar.jpg) repeat;
+    line-height: 0px;
+    height: 3px;
+    margin-top: 7px;
+}
+
+.defaultCursor{
+    cursor: default !important;
+}
+
+.milestoneIcon {
+    background: url(../images/milestone.gif);
+    border: none;
+}
+
+.milestoneWeekIcon {
+    background: url(../images/weekmilestone.png);
+    border: none;
+}
+
+.newTaskPanelStyle {
+/*    border: 1px solid #e67e0f;*/
+    border: 1px solid #549aff;
+}
+
+#chartContainerPanel .x-resizable-handle-east {
+    cursor: url(../images/extend1.cur), auto !important;
+}
+
+.TempTask {
+    cursor: url(../images/movecursor.cur), auto !important;
+    position: absolute;
+    border: 2px solid;
+    height: 9px;
+    line-height: 0px;
+    min-height: 9px;
+}
+
+.taskheader, .tName, .tSDate, .tDuration, .tEDate {
+    height: 16px;
+}
+
+.taskheader, .tName, .tEDate {
+    width: 100%;
+}
+.tName{
+    overflow:hidden !important;
+    /*display:block;*/
+    width:100%;
+}
+.taskheader{
+    display:block;
+}
+.tSDate, .tDuration {
+   /* width: 50%;*/
+}
+
+.taskheader {
+    text-align: center;
+}
+
+.tName, .tEDate, .tSDate {
+    text-align: left;
+}
+
+.tDuration {
+   /* text-align: right;
+    float: right;*/
+}
+
+.ganttChart {
+    height: auto !important;
+/*    width: 7167px !important;*/
+}
+
+.gridFrame {
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.charteastPane {
+    padding-bottom: 7px !important;
+}
+/* this is done to fix the scroll in ie gte 6 as well as firefox*/
+.scrollPanel {
+    position: relative;
+}
+
+.x-grid-editor, .scrollPanel .x-panel-body, .scrollPanel .x-panel-bwrap {
+    position: relative !important;
+}
+
+.x-grid-editor {
+    float: left !important;
+}
+
+.imgcls {
+    width: 10%;
+    float: left;
+}
+
+.defaulttext {
+    /*float: left;*/
+    margin-left: 15px;
+    width: 80%;
+ /*   display: inline;*/
+    vertical-align: middle;
+}
+
+.imgtext {
+    /*float: left;*/
+    margin-left: 3px;
+    /*display: inline;*/
+    width: 80%;
+    /*font-weight: bold;*/
+}
+
+.parentRow td, .parentRow tr {
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.plus, .minus, .Dminus {
+    width: 10px;
+    height: 10px;
+    float: left;
+    display: inline;
+    margin-right: 5px;
+}
+
+.minus, .Dminus, .forum_minus {
+    background: url('../lib/resources/images/default/tree/elbow-minus-nl.gif') no-repeat center;
+}
+
+.plus, .forum_plus {
+    background: url('../lib/resources/images/default/tree/elbow-plus-nl.gif') no-repeat center;
+}
+
+.minus {
+    display: none;
+}
+
+.Dminus {
+    display: block;
+}
+
+.bt, .bt3 {
+    margin-right: 5px;
+}
+
+.bt1 {
+    margin-right: 4px;
+}
+
+.bt2, .bt3 {
+    margin-top: 5px;
+}
+
+.repoNormal {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.repoBold {
+    font-weight: bold;
+    border-bottom: 1px solid #add8e6;
+}
+
+#reportGrid .x-grid3-row, #templateName .x-grid3-row {
+    border: 0 solid black;
+}
+
+.dateField {
+    margin-left: 20px;
+}
+
+.x-combo-list .x-combo-list-cursor {
+    border: 1px dotted #000000 !important;
+}
+
+.x-combo-list-item {
+    cursor: pointer;
+}
+
+.x-combo-list .x-combo-selected + .x-combo-selected {
+    border-top-color: #DFE8F6 !important;
+}
+
+.x-combo-list .x-combo-selected + .x-combo-selected.x-combo-list-cursor {
+    border-top-color: #000000 !important;
+}
+
+.subtab {
+    padding: 16px;
+}
+
+.backcolor {
+    background-color: transparent !important;
+}
+
+.selected img {
+    border: 1px outset #222;
+}
+
+.padding {
+    padding: 8px;
+    background-color: white;
+}
+
+.searchInput {
+    padding-left: 36px !important;
+    border-top: 1px solid #041e9f !important;
+    border-bottom: 1px solid #041e9f !important;
+}
+
+.searchInput-over {
+    border-top: 1px solid #efa63c !important;
+    border-bottom: 1px solid #efa63c !important;
+}
+
+.searchleftbutton .x-btn-right {
+    background: transparent;
+}
+
+.searchrightbutton .x-btn-left {
+    display: none !important;
+}
+
+.todoNode {
+    background: transparent url(../images/Notes.png) no-repeat !important;
+}
+
+.groupNode {
+    background: transparent url(../images/list-items.gif) no-repeat !important;
+}
+
+.todoPanel-header {
+    padding: 5px 5px 5px 5px;
+    background-color: #dde7ee;
+    color: #00156e;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 15px;
+    margin:0px;
+}
+
+.todoPanel-body {        
+    overflow-y:auto !important; 
+    overflow-x:hidden !important;
+}
+
+.x-form-field {
+    vertical-align: text-bottom;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.left-button {
+    float: left;
+    margin: 6px 5px 1px 1px;
+}
+
+.right-button {
+    float: right;
+    margin: 6px 0 1px 6px;
+}
+
+.x-form fieldset {
+    border: 1px solid #B5B8C8;
+    padding: 10px;
+    margin: 0 6px 6px 6px;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    vertical-align: text-bottom;
+}
+
+.imageContainer {
+    width: 40%;
+    margin: auto;
+    height: 47px;
+    padding-top: 10px;
+}
+
+.windowimage, .windowForm, .windowFieldset {
+    margin: auto;
+}
+
+.radioButton, .windowComp, .windowComp .x-form-cb-label, .windowSpan, .windowFieldset, .todoPanel-header, .repoBold {
+    font-size: 11px;
+}
+
+.windowFieldset {
+    padding: 0;
+}
+
+.windowSpan {
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.pwnd {
+    background: url(../images/tbar.gif) no-repeat !important;
+}
+
+.dpwnd {
+    background: url(../images/dtbar.gif) no-repeat !important;
+}
+.createtpl {
+    background-position: 0 -1780px !important;
+}
+
+.inserttpl {
+    background-position: 0 -1755px !important;
+}
+.deletetpl {
+    background-position: 0 -2836px !important;
+}
+
+.deliconwt {
+    background-position: 0 -385px !important;
+}
+
+.delicon {
+    background-position: 0 -387px !important;
+}
+
+.cuticon {
+    background-position: 0 -772px !important;
+}
+
+.cpyicon {
+    background-position: 0 -748px !important;
+}
+
+.pasteicon {
+    background-position: 0 -1036px !important;
+}
+
+.leftarw {
+    background-position: 0 -917px !important;
+}
+
+.rightarw {
+    background-position: 0 -893px !important;
+}
+/*Shabbir:changed project plan icons*/
+
+.calsync {
+    background-position: 0 -820px !important;
+}
+
+.reporticon {
+    background-position: 0 -1060px !important;
+}
+
+.reportmenuicon{
+    background-position: 0 -1057px !important;
+}
+.reporttab {
+    background-position: 0 -1055px !important;
+}
+.overdueicon {
+    background-position: 0 -2068px !important;
+}
+.priorityicon {
+    background-position: 0 -2094px !important;
+}
+.progressicon {
+    background-position: 0 -1467px !important;
+}
+.updatecompanydetails {
+    background-position: 0 -1106px !important;
+}
+.resourceicon {
+    background-position: 0 -1083px !important;
+}
+.baselineicon {
+    background-position: 0 -1227px !important;
+}
+.comparebaselineicon {
+    background-position: 0 -2307px !important;
+}
+.comparebaselineiconTab {
+    background-position: 0 -2303px !important;
+}
+.hideganttchart {
+    background-position: 0 -1423px !important;
+}
+.baselineiconTab {
+    background-position: 0 -1227px !important;
+}
+
+.taskpanelicon {
+    background-position: 0 -1180px !important;
+}
+
+.taskpanelenabledicon {
+    background-position: 0 -1180px !important;
+}
+
+.taskpaneldisabledicon {
+    background-position: 0 -1205px !important;
+}
+
+.importicon {
+    background-position: 0 -1276px !important;
+}
+.importiconToDo {
+    background-position: 0 -1273px !important;
+}
+.importbasecamp{
+    background-position: 0 -698px !important;
+}
+.customreport{
+     background-position: 0 -1057px !important;
+}
+.addcustomreport{
+     background-position: 0 -3389px !important;
+}
+.opencustomreport{
+     background-position: 0 -3413px !important;
+}
+.c_reporttabicon{
+    background-position: 0 -1055px !important;
+}
+.cr_moveup{
+    background-position: 0 -2880px !important;
+}
+.cr_movedown{
+    background-position: 0 -2855px !important;
+}
+.saveicon1  {
+    background-position:0 -1105px !important;
+}
+.applyfilter{
+    background-position:0 -2759px !important;
+}
+.submiticon1{
+    background-position:0 -73px !important;
+}
+.clearallicon{
+     background-position:0 -1726px !important;
+}
+.addfiltericon{
+    background-position:0 -2783px !important;
+}
+.exporticontext1 {
+    background-position: 0 -1248px !important;
+}
+.closefiltericon{
+    background-position: 0 -1704px !important;
+}
+.filteroperator{
+    background:  #0000FF
+}
+.exporticon {
+    background-position: 0 -1252px !important;
+}
+.exporticontext {
+    background-position: 0 -1250px !important;
+}
+.csvexporticon {
+    background-position: 0 -2740px !important;
+}
+.pdfexporticon {
+    background-position: 0 -2716px !important;
+}
+.contactimporticon {
+    background-position: 0 -865px !important;
+}
+.contactexporticon {
+    background-position: 0 -842px !important;
+}
+.calexporticon {
+    background-position: 0 -844px !important;
+}
+.savebaselineicon {
+    background-position: 0 -1108px !important;
+}
+
+.projstartdate {
+    background-position: 0 -796px !important;
+}
+.changepwdicon {
+    background-position: 0 -1733px !important;
+}
+.resetpwdicon {
+    background-position: 0 -1753px !important;
+}
+.notification {
+    background: url(../images/email_go.png) no-repeat !important;
+}
+/*ends*/
+.radContainer {
+    padding-left: 5px;
+    margin-left: 25px;
+    height: 30px;
+}
+.radPanel {
+    padding-left: 8px;
+    padding-top:  4px;
+    margin-top: -6px;
+    font: 12px tahoma,arial,helvetica,sans-serif;
+}
+.BFvfre {
+    font-size: 70%;
+    padding-left: 5px;
+    width: 13px;
+}
+.qn0D4e {
+    cursor: pointer;
+    font-family: verdana,arial,sans-serif;
+    font-size: 9px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 10px;
+    margin: 0pt 0pt 3px;
+    outline-color: invert;
+    outline-style: none;
+    outline-width: medium;
+    text-decoration: none;
+}
+
+.qn0D4e b {
+    border-color:-moz-use-text-color;
+    border-style:solid;
+    border-width:1px 0pt;
+    display:block;
+    font-weight:normal;
+    margin:0pt 1px;
+    padding:0pt;
+    position:relative;
+}
+.qn0D4e b b {
+    background:transparent none repeat scroll 0%;
+    border-width:0pt 1px;
+    display:block;
+    margin:0pt -1px;
+    padding:0pt;
+    position:static;
+}
+.qn0D4e b b b {
+    border-width:0pt;
+    margin:0pt;
+    padding:0pt 1px 1px;
+}
+
+.task-link{
+    width:0px;
+    height:0px;
+}
+
+.rssfeedicon{
+    background-position: 0 -1300px !important;
+}
+
+.rssimgMid {
+    height : 15px;
+    vertical-align :middle;
+    width :15px
+    
+}
+
+/*COMMON SPRITE IMAGE CLASSES*/
+
+.addnewgroup {
+   /* background: transparent url(../images/list-items.gif) no-repeat scroll left center  !important;*/
+    background-position: 0 -98px !important;
+
+}
+
+.addnew {
+    background: transparent url(../images/btn_add_quick.gif) no-repeat scroll left center  !important;
+  /* background-position: 0 -170px !important;*/
+}
+
+.offline {
+    background-position: 0 -555px !important;
+}
+
+.inbox {
+    background-position: 0 -1634px !important;
+}
+
+.send_item {
+    background-position: 0 -1179px !important;
+}
+
+.flag_item{
+    background-position: 0 -173px !important;
+}
+
+.flag_item_grey{
+    background-position: 0 -1612px !important;
+}
+
+.mail_generic{
+    background-position: 0 -1730px !important;
+}
+
+.add_folder_front{
+    background-position: 0 -28px !important;
+}
+
+.delete_folder{
+    background-position: 0 -1707px !important;
+}
+
+.add_folder{
+    background-position: 0 -195px !important;
+}
+
+.search-item {
+    font:normal 11px tahoma, arial, helvetica, sans-serif;
+    padding:3px 10px 3px 10px;
+    border:1px solid #fff;
+    border-bottom:1px solid #eeeeee;
+    white-space:normal;
+    color:#555;
+    height:36px;
+}
+.search-item h3 {
+    display:block;
+    font:inherit;
+    font-weight:bold;
+    color:#222;
+    float: left;
+    margin-left: 4px;
+}
+.search-item img {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+.search-item div {
+    width: auto;
+    float: left;
+    margin-left: 10px;
+}
+.search-item h3 span {
+    clear:none;
+    display:block;
+    font-weight:inherit;
+    margin:0 0 5px 5px;
+    width:auto;
+}
+.search-username-combo{
+    width: 97%;
+}
+/*To Do Task css*/
+.toDoPanel{
+    border-right-style:solid;
+    border-width:1px;
+    border-color:#C4D5E8;
+    margin-left:50px;
+}
+.toDoTextarea{
+    width:65% !important;
+}
+.toDoDateField{
+    width:160px !important;
+}
+.toDoPanel1{
+    margin-left:60px;
+}
+.todoCombo{
+    margin-bottom:10px !important;
+    width:150px !important;
+}
+.to-Do-duedateCont img, .todoComboCont img{
+    right: auto !important;
+}
+.todoouterpanel{
+    border: 1px solid #C4D5E8;
+    /*background-color:#D9E8FB;*/
+    padding-top:10px;
+
+}
+.todoinnerpanel{
+    /*background-color:#DFE8F6;*/
+    margin-right:10px;
+    margin-left:15px;
+}
+/*project plan css*/
+.contentmsgspan{
+   /* overflow:hidden !important;*/
+    width:90% !important;
+}
+.moveup{
+    background-position: 0 -2885px !important;
+}
+.movedown{
+    background-position: 0 -2860px !important;
+}
+.permWinFieldset{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.permDesc{
+    border-top-color:#CCCCCC;
+    border-top-style:dotted;
+    border-top-width:1px;
+    margin-bottom:2px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+    padding-top:5px;
+}
+.templateFieldset{
+    border: 0px solid red !important;
+}
+.embedFieldset{
+    border: 0px solid red !important;
+    margin: 5px;
+}
+.addToPlan{
+    background-position: 0 -2905px !important;
+}
+.profileKeys{
+    float: left;
+    width:25%;
+}
+.profileValues{
+    float: left;
+    width:70%;
+}
+.reportToolbarBtn{
+    margin-left: 7px;
+}
+.planmodeicon{
+    background-position: 0 -2212px !important;
+}
+.listComboCss{
+    width: 180px;
+}
+.calComboCss{
+    width: 180px;
+}
+.spacer {
+    background:none repeat scroll 0 0 #AFAFAF !important;
+    height:1px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.hideFormField{
+    display: none;
+}
+.reportCurrencyNote{
+    float:right;
+    margin-right:20px;
+    margin-top:10px;
+    display:block;
+    height:16px;
+    width:200px;
+    font-weight: bold;
+}
+.projectchartdiv{
+    height: 250px;
+    margin: 15px;
+}
+.reportAcceptDateWinText {
+    color: #15428B;
+    font-size: 12px;
+}
+.pertSheetInfoPanel{
+    background-color: #F1F1F1;
+    margin: 5px 5px 5px 5px;
+}
+.grayrow{
+    background-color: #d1d1d1;
+}
+.savePERTSheetIcon{
+    background-position: 0 -1105px !important;
+}
+.durDiffIcon{
+    background-position: 0 -3054px !important;
+}
+.updatePERTSheetIcon{
+    background-position: 0 -3078px !important;
+}
+.runCPAIcon{
+    background-position: 0 -2982px !important;
+}
+.updatePERTSheetTabIcon{
+    background-position: 0 -3075px !important;
+}
+.runCPATabIcon{
+    background-position: 0 -3003px !important;
+}
+.runCPAOnGCIcon{
+    background-position: 0 -3030px !important;
+}
+.runCPAWithPERTIcon{
+    background-position: 0 -3000px !important;
+}
+.runCPAWithoutPERTIcon{
+    background-position: 0 -3000px !important;
+}

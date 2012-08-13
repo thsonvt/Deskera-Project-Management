@@ -1,0 +1,36 @@
+/* 
+    Document   : webkit
+    Created on : Mar 25, 2010, 12:40:17 PM
+    Author     : Abhay
+    Description:
+        Used for webkit browsers only. (chrome and safari all versions)
+*/
+
+/* Width fix for widget quick add (dashboard.css)*/
+
+.widgetDateField{
+    width:170px !important;
+}
+.WidgetTextArea{
+    width:170px !important;
+}
+.docTagTextBox{
+    margin-right: 0px;
+    top:60% !important;
+    position: relative;
+}
+#notificationcheck{
+    width: 14px !important;
+}
+.reportmenuicon{
+    background-position: 0 -1058px !important;
+}
+.x-form-field-wrap .x-form-trigger{
+    right: auto !important;
+}
+.projectchartdiv{
+    height: 30% !important;
+}
+.importiconToDo {
+    background-position: 0 -1274px !important;
+}

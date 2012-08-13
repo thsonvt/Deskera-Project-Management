@@ -1,0 +1,449 @@
+<html>
+    <head>
+        <script type="text/javascript" src="scripts/core/42.js"></script>
+        <script type="text/javascript" src="scripts/testApi.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test Page</title>
+        <style type="text/css" media="screen">
+            body{font-family:tahoma,arial,sans-serif;}
+            .mainDiv{width:850px;margin-left:auto;margin-right:auto;padding:5px;/*background-color:#F1F1F1;*/}
+            .formTable{width:30%}
+            table{font-size : 11px; width : 100%;}
+            .tdName{width : 20%}
+            .tdname1{width: 23%}
+            .tdname2{width: 26%}
+            .tdname3{width: 26%}
+            .tdName4{width : 20%}
+            .tdTextBox{width : 40%}
+            .tdTextBox1{width : 30%}
+            .tdLink{width : 10%}
+            .msg{color:red}
+            .tdTextBox input{width : 92%}
+            input, .tenSpacing{margin-left : 10px}
+            td div{margin-left : 17px}
+        </style>
+    </head>
+    <body>
+      <div onclick="fun1()">
+        <h1>Test the API functionality</h1>
+        <div class ="mainDiv" onclick="fun1()">
+            <table class ="formTable">
+                <form name="apiform">
+                    <tr class="form1">
+                        <td class ="tdName"><strong>E-mail</strong></td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <span>
+                                True<input type="radio" name="email_check" value="true" id="email_check" checked>
+                                False<input type="radio" name="email_check" value="false" id="email_check" >
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Commit</strong></td>
+                        <td>
+                            <strong>:</strong>
+                            <span>
+                                True<input type="radio" name="commit" value="true" id="commit_check" checked>
+                                False <input type="radio" name="commit" value="false" id="commit_check" >
+                            </span>
+                        </td>
+                    </tr>
+                </form>
+           </table>
+
+
+<!--Company exist-->
+       <fieldset>
+                <legend>
+                    Company Exist
+                </legend>
+                <table class ="mainTable">
+                    <tr>
+                        <td class ="tdName4">
+                            Enter Company Id*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text"  name="cid" id="C_E_companyCheck" />
+                            <div>E.g. a1ccabcc-b3f6-4340-9fb5-e9fad6bb389a</div>
+                            <div><center><b>OR</b></center></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class ="tdName">
+                            Enter Subdomain*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text"  name="cid" id="C_E_S_companyCheck" />
+                            <div>E.g. kdemo</div>
+                        </td>
+                        <td class ="tdLink">
+                            <input type ="button"  value="Test" onclick="testFunction(0)" />
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><td>
+                         <div id="companyCheck_result" class="msg"></div>
+                        </td></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+<!--User exists-->
+             <fieldset>
+                    <legend>
+                       User Exists
+                    </legend>
+                     <table class ="mainTable">
+                    <tr>
+                        <td class ="tdName2">
+                            Enter User ID
+                        </td>
+                        <td class="tdTextBox">
+                                <strong>:</strong>
+                                <input type="text" name="uid" id="U_E_userIdCheck" />
+                                <div>E.g. 00e5a151-ca67-4aa7-9a16-da6a72f89969</div>
+                                <div><center><b>OR</b></center></div>
+                        </td>
+                        <td class="tdLink"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter User name:
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="unm" id="U_E_username" />
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            Enter Company Id*
+                        </td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="ucompanyid" id="U_E_companyid" />
+                            <div>
+                                E.g. a1ccabcc-b3f6-4340-9fb5-e9fad6bb389a
+                            </div>
+                        </td>
+                        <td><b>OR</b></td>
+
+                        <td>Enter Subdomain</td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="unm" id="U_E_subdomain" />
+                            <div>
+                                E.g. kdemo
+                            </div>
+                        </td>
+                        <td>
+                            <input type ="button" value ="Test" onclick ="testFunction(1)" />
+                        </td>
+
+                    </tr>
+                     <tr>
+                         <td><td>
+                        <div id="userCheck_result" class="msg"></div>
+                        </td></td>
+                    </tr>
+                </table>
+                </fieldset>
+
+        <!--User Creation-->
+            <fieldset>
+                <legend>Create User</legend>
+                <table>
+                    <tr>
+                        <td class ="tdName1">
+                            Enter User name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="unm1" id="C_U_username" />
+                        </td>
+                        <td class ="tdLink"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter email*:
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="em" id="C_U_email" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            Enter Company Id*
+                        </td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="companyid" id="C_U_companyid" />
+                            <div>
+                                E.g. a1ccabcc-b3f6-4340-9fb5-e9fad6bb389a
+                            </div>
+                        </td>
+                        <td><b>OR</b></td>
+                        <td>Enter Subdomain</td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="companyid" id="C_U_subdomain" />
+                            <div>
+                                E.g. kdemo
+                            </div>
+                        </td>
+                    </tr>
+                   <!-- <tr>
+                        <td>
+                            Enter Role*
+                        </td>
+                        <td>
+                            <strong>:</strong>
+                            <select name="role" id="C_U_role" class ="tenSpacing">
+                                <option value="l1">Faculty</option>
+                                <option value="l2" selected>Student</option>
+                            </select>
+
+                        </td>
+                        <td></td>
+                        <td></td>
+                        </tr>-->
+                    <tr>
+                        <td>
+                            Enter First Name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="fm" id="C_U_firstName" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Last Name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="lm" id="C_U_lastName" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Address
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="ad" id="ad" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Phone Num
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="phn" id="phn" />
+                        </td>
+                        <td>
+                            <input type ="button" value ="Test" onclick ="testFunction(2)" />
+                        </td>
+                        
+                    </tr>
+                     <tr>
+                        <td><td>
+                         <div id="userCreate_result" class="msg"></div>
+                        </td></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!--Company Creation-->
+            <fieldset>
+                <legend>Create Company</legend>
+                <table>
+                    <tr>
+                        <td class ="tdName">
+                            Enter Subdomain*:
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="companyname" id="C_C_subdomain" />
+                        </td>
+                        <td class ="tdLink"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class ="tdName">
+                            Enter Company name*:
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="companyname" id="C_C_companyname" />
+                        </td>
+                        <td class ="tdLink"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter User Name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="un_c" id="C_C_username" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter First Name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="fm_c" id="C_C_firstName" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Last Name*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="lm_c" id="C_C_lastName" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter email*
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="em_c" id="C_C_email" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="divID">
+                        <td>
+                            Enter Address
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="ad_c" id="C_C_address" />
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter Phone Num
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text"name="phn_c" id="C_C_phone" />
+                        </td>
+                        <td>
+                            <input type ="button" value ="Test" onclick ="testFunction(3)" />
+                        </td>
+                        
+                    </tr>
+                    
+                     <tr>
+                         <td><td>
+                         <div id="companyCreate_result" class="msg"></div>
+                        </td></td>
+                    </tr>
+                     
+                </table>
+            </fieldset>
+
+                <!--Delete User-->
+                <fieldset>
+                    <legend>
+                        Delete User
+                    </legend>
+                     <table class ="mainTable">
+                    <tr>
+                        <td class ="tdName3">
+                            Enter User ID
+                        </td>
+                        <td class="tdTextBox">
+                                <strong>:</strong>
+                                <input type="text" name="uid" id="U_E_D_userIdCheck" />
+                                <div>E.g. 00e5a151-ca67-4aa7-9a16-da6a72f89969</div>
+                                <div><center><b>OR</b></center></div>
+                        </td>
+                        <td class="tdLink"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Enter User name:
+                        </td>
+                        <td class="tdTextBox">
+                            <strong>:</strong>
+                            <input type="text" name="unm" id="U_E_D_username" />
+                        </td>
+                       
+                    </tr>
+                    <tr>
+
+                        <td>
+                            Enter Company Id*
+                        </td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="ucompanyid" id="U_E_D_companyid" />
+                            <div>
+                                E.g. a1ccabcc-b3f6-4340-9fb5-e9fad6bb389a
+                            </div>
+                        </td>
+                        <td><b>OR</b></td>
+                        <td>Enter Subdomain</td>
+                        <td class="tdTextBox1">
+                            <strong>:</strong>
+                            <input type="text" name="unm" id="U_E_D_subdomain" />
+                            <div>
+                                E.g. kdemo
+                            </div>
+                        </td>
+                        <td>
+                            <input type ="button" value ="Test" onclick ="testFunction(4)" />
+                        </td>
+
+                    </tr>
+                    
+                     <tr>
+                         <td><td>
+                         <div id="deleteUser_result" class="msg"></div>
+                        </td></td>
+                    </tr>
+                </table>
+                </fieldset>
+
+               
+        </div>
+    </body>
+</html>

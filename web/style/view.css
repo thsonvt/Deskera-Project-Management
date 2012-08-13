@@ -1,0 +1,1081 @@
+.logoBrowse{
+    padding-left: 20px;
+}
+
+html, body {
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-sarif;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+    font-size: 12px;
+}
+
+#header {
+    font-size: 11px;
+    overflow: hidden;
+    padding: 5px;
+    border: 0 none;
+}
+
+.loading-indicator {
+    font-size: 8pt;
+    background: url('../images/loading.gif') no-repeat top left;
+    padding-left: 20px;
+    height: 18px;
+    text-align: left;
+}
+
+#loading, #docsloading {
+    position: absolute;
+    border: 1px solid #6593cf;
+    padding: 2px;
+    background: #c3daf9;
+    text-align: center;
+    z-index: 20001;
+}
+
+#loading {
+    left: 45%;
+    top: 40%;
+    width: 150px;
+}
+
+#loading .loading-indicator, #docsloading .loading-indicator {
+    border: 1px solid #a3bad9;
+    color: #003366;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0;
+}
+
+#loading .loading-indicator {
+    background: white;
+    padding: 10px;
+}
+
+#docsloading {
+    left: 34%;
+    top: 34%;
+    width: 140px;
+}
+
+#docsloading .loading-indicator {
+    background-color: white;
+    padding: 3px;
+}
+
+#navcontainer {
+    /*position:absolute;*/
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+#navseparator {
+    background: #0000a0 url(../images/navseparator.png) repeat-x;
+    border-right: thin solid #0000a0;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    /*bottom: 155px;*/ /*position:absolute; */
+    overflow: hidden;
+}
+
+#document-tree a, #mailtreemenu a, #mailtreemenu a .body, #navareadashboard a, #navareadashboard a .body {
+    background: none;
+    border: none;
+}
+
+#document-tree a, #mailtreemenu a, #navareadashboard a {
+    padding: 0;
+    display: inline;
+}
+
+.navitem-list a, .navitem-list a:hover, .navitem-list .selected:hover {
+    text-decoration: none;
+}
+
+.navitem-list a {
+    border: 1px solid #0000a0;
+    border-top: 0;
+    display: block;
+    background: #a5c4ee url('../images/navbg.png') repeat-x left -62px;
+}
+
+.navitem-list a:hover {
+    background: #fdf4be url('../images/navbg.png') repeat-x left -31px;
+}
+
+.navitem-list .selected:hover {
+    background: #f3ba59 url('../images/navbg.png') repeat-x left -93px;
+}
+
+.navitem-list .selected {
+    background: #f3ba59 url('../images/navbg.png') repeat-x;
+}
+
+.navitem-list a .body {
+    padding: 8px 2px 10px 32px;
+    background-position: 5px 3px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 11px;
+    color: #2d5593;
+    display: block;
+    height: 12px;
+    cursor: hand;
+    -moz-outline: none;
+}
+
+.navitem-list #navdashboard .body {
+    background-image: url(../images/home.gif);
+}
+
+.navitem-list #navaccounting .body {
+    background-image: url(../images/dollar.gif);
+}
+
+.navitem-list #navproject .body {
+    background-image: url(../images/project.gif);
+}
+
+.navitem-list #navcommunity .body {
+    background-image: url(../images/community.gif);
+}
+
+.navitem-list #navfriends .body {
+    background-image: url(../images/network.gif);
+}
+
+.navitem-list #navdocs .body {
+    background-image: url(../images/document.gif);
+}
+
+.navitem-list #navcrm .body {
+    background-image: url(../images/customer.gif);
+}
+
+#navareadashboard {
+    width: 99%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#calContainer {
+    width: 99%;
+    height: 99%;
+    overflow-y: auto !important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#calendartree-container, #calendartree-container .x-panel-bwrap {
+    width: 99%;
+    height: auto;
+}
+
+#calendartree-container .x-panel-bwrap {
+    overflow: hidden !important;
+}
+
+#calendarcontainer .x-panel-bwrap {
+    overflow: hidden !important;
+}
+
+#calendarcontainer {
+    overflow: hidden !important;
+    height: 190px;
+}
+
+#navarea a:hover {
+    background-color: #e0e0e5;
+}
+
+#navigation {
+    background-color: #c3daf9;
+}
+
+.x-pannel-hide {
+    display: none;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.navigationPanel {
+    width: 200px;
+    min-width: 75px;
+    max-width: 250px;
+}
+
+#pmessage .x-panel-bwrap {
+    overflow: auto !important;
+    height: 99%;
+    width: 99%;
+}
+
+#calpanel {
+    position: relative;
+}
+
+#calendarcontainer div {
+    position: relative;
+}
+
+#calpanel .x-panel-bwrap {
+    overflow: hidden;
+    height: 99%;
+    width: 99%;
+}
+
+#calContainer .x-date-mp {
+    width: 180px !important;
+    position: absolute !important;
+}
+
+#calContainer .x-date-mp table {
+    width: 100% !important;
+}
+
+#northNavRegion .x-tool-toggle {
+    background-position: 0 -195px !important;
+}
+
+#northNavRegion .x-tool-toggle-over {
+    background-position: -11pt -195px !important;
+}
+
+#northNavRegion .x-panel-collapsed .x-accordion-hd .x-tool-toggle {
+    background-position: 0 -210px !important;
+}
+
+#northNavRegion .x-panel-collapsed .x-accordion-hd .x-tool-toggle-over {
+    background-position: -11pt -210px !important;
+}
+
+.communityTabIcon {
+    background-position: 0 -1392px !important;
+}
+
+.projectTabIcon {
+    background-position: 0 -1489px !important;
+}
+
+.companyTabIcon {
+    background-position: 0 -1080px !important;
+}
+
+.userTabIcon {
+    background-position: 0 -576px !important;
+}
+
+.doctabicon {
+    background-position: 0 -1225px !important;
+}
+
+.searchdoc {
+    background-position: 0 -1228px !important;
+}
+
+.accountTabIcon {
+    background-image: url(../images/dollar.gif) !important;
+}
+
+.accreportsTabIcon {
+    background-image: url(../images/report-icon.gif) !important;
+}
+
+.acccustomerTabIcon {
+    background-image: url(../images/customer.gif) !important;
+}
+
+.accvendorTabIcon {
+    background-image: url(../images/vendor.gif) !important;
+}
+
+.accemployeeTabIcon {
+    background-image: url(../images/user_gray.gif) !important;
+}
+
+.crmTabIcon{
+    background-image: url(../images/customer.gif) !important;
+}
+
+.teamcal {
+    background-position: 0 -2186px !important;
+}
+
+.projplan {
+    background-position: 0 -1200px !important;
+}
+
+.dashboardTabIcon {
+    background-position: 0 -1344px !important;
+}
+
+.communitydiscuss {
+    background-position: 0 -145px !important;
+}
+
+.pmsgicon {
+    background-position: 0 -1464px !important;
+}
+
+.audittrailicon{
+    background-position: 0 -144px !important;
+}
+
+.teamicon{
+    background-position: 0 -2260px !important;
+}
+
+.clearfiltericon{
+    background-position: 0 -2809px !important;
+}
+
+.colorcoder{
+    background-position: 0 -2281px !important;
+}
+.graph{
+    background-position: 0 -2234px !important;
+}
+
+.filtericon{
+    background-position: 0 -2764px !important;
+}
+
+.addfiltericon{
+    background-position: 0 -2786px !important;
+}
+
+.admintab {
+    background-position: 0 -1415px !important;
+}
+
+.conflicticon {
+    background-position: 0 -1564px !important;
+}
+
+.conflicttabicon {
+    background-position: 0 -1560px !important;
+}
+
+.chaticon {
+    background-position: 0 -145px !important;
+}
+
+.todolistpane {
+    background-position: 0 -97px !important;
+}
+
+.searchtabpane {
+    background-position: 0 -890px !important;
+}
+
+.shortcuts, .userinfo, .mailTo {
+    color: gray;
+}
+
+.shortcuts {
+    float: right;
+    margin-left: 3px;
+}
+
+.shortcuts23 {
+    float: right;
+}
+
+.userinfo {
+    float: left;
+    margin: -2px 14px;
+}
+
+.shortcuts a, .userinfo a, .listpanelcontent a, .mailTo a {
+    text-decoration: none;
+}
+
+.shortcuts a {
+    margin-right: 3px;
+}
+
+.shortcuts a:link, .shortcuts a:visited, .userinfo a:link, .userinfo a:visited, .listpanelcontent a:link, .listpanelcontent a:visited,
+.mailTo a:link, .mailTo a:visited {
+    color: #083772;
+}
+
+.shortcuts a:hover, .userinfo a:hover, .listpanelcontent a:hover, .mailTo a:hover{
+    color: #456;
+    text-decoration: underline;
+}
+
+.editusericon {
+    background-position: 0 -1482px !important;
+}
+
+#companyLogo {
+    float: left;
+}
+
+#whoami {
+    font-weight: bold;
+    color: black;
+}
+
+#serchForIco {
+    position: absolute !important;
+    z-index: 1000 !important;
+}
+
+#searchBar, #versionLog {
+    float: right !important;
+    display: inline !important;
+}
+
+.scrollform {
+    font-size: 10px !important;
+    padding-bottom: 3px !important;
+    height: auto !important;
+}
+
+.scrollform .x-panel-bwrap .x-panel-body {
+    padding: 20px !important;
+    overflow-y: auto;
+}
+
+.contactsTabIcon {
+    background-position: 0 -1560px !important;
+}
+
+.searchall {
+    background-position: 0 -1949px !important;
+}
+
+.searchalltab {
+    background-position: 0 -1947px !important;
+}
+
+.searchpeople {
+    background-position: 0 -580px !important;
+}
+
+.searchcommunity {
+    background-position: 0 -1300px !important;
+}
+
+.searchproject {
+    background-position: 0 -1492px !important;
+}
+
+.appbg {
+    background: #6490CB url(../images/bgstrip.png) repeat-x;
+}
+
+.tool{
+    background:#366487;
+    color:white;
+}
+.tool h3{
+    font-weight:bold;
+    font-size:16px;
+}
+
+.newForm label{
+    margin-top:15px;
+
+    font-size:14px;
+    float:none !important;
+    width:auto !important;
+    word-spacing:normal;
+    font-weight:bold;
+}
+.newForm label span {
+    font-size:11px;
+    display:block;
+    margin-bottom:5px;
+    font-weight:normal;
+    color:#444;
+}
+
+.newForm .x-form-element{
+    padding-left:0px !important;
+}
+
+.newField{
+    float:none !important;
+    width:90% !important;
+}
+
+.newField input, .newField file {
+    float:none !important;
+    width:90% !important;
+}
+
+.messagePanelHeader{
+    margin:10px;
+}
+
+.messagePanelBody{
+    padding:10px;
+    margin:10px;
+}
+
+.messagePanelBody .x-panel-body{
+    overflow:auto !important;
+}
+
+.messagePanelHeader .x-panel-body{
+    border-bottom:thin solid #666;
+    width:98% !important;
+}
+
+.x-grid3 table {
+    table-layout:fixed;
+}
+.x-date-middle {
+    width:130px;
+}
+
+
+
+.doclinks a {
+    color: white;
+    text-decoration: underline;
+}
+
+/*fix for firefox3 to display header label*/
+.userprofile-main .x-column {
+    float:none;
+}
+
+.head-label {
+    margin-right:5px;
+    color:#15428b;
+    font-weight:bold;
+}
+
+.messagePanelHeader ul{
+    line-height:20px;
+    list-style-type:none;
+}
+
+/*fix for grid rendering in Firefox 3 has no effect on firefox2 and ie 6 & 7*/
+.x-grid3 table {
+    table-layout:fixed;
+}
+
+.x-date-middle {
+    width:130px;
+}
+
+
+
+/*fix for firefox3 to display header label*/
+.userprofile-main .x-column {
+    float:none;
+}
+
+#compLogoinfo {
+    padding-left:115px !important;
+    font-size:10px !important;
+    font-style:italic !important;
+    padding-left:125px !important;
+    color:gray !important;
+}
+#attachmentlink{
+    padding-left:105px !important;
+}
+.fileattachremove{
+    padding-left:3px !important;
+    margin-bottom:3px;
+    margin-left: 102px;
+}
+.attachmentlink {
+    color: #083772;
+    text-decoration:none;
+}
+.attachmentlink:hover{
+    color: #456  !important;
+    text-decoration: underline  !important;
+}
+.dashboardcontent a {
+    text-decoration: none;
+}
+
+.dashboardcontent a:visited, .dashboardcontent a {
+    color: #083772;
+}
+
+.dashboardcontent a:hover {
+    color: #456;
+    text-decoration: underline;
+}
+
+.statuspanelouter {
+    width: 67%;
+    /*    height: 100px;*/
+    float: left;
+}
+
+.statuspanelinner {
+    margin-right: 20px;
+}
+
+.statuspanelheader {
+    height: 24px;
+    border-bottom: 1px solid #D8DFEA;
+    color: #15428B;
+}
+
+.linkspanel {
+    width: 33%;
+    float: right;
+}
+
+.contentpanel {
+    height: 300px;
+}
+
+.statuspanelheadertext {
+    font-weight: bold;
+}
+
+.duetask{
+    background-position: 0 -508px !important;
+}
+
+.newtask{
+    background-position: 0 -1204px !important;
+}
+
+.overduetask{
+    background-position: 0 -1131px !important;
+}
+
+.statusitemimg {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.statusitemcontent {
+    border-bottom: 1px solid #D8DFEA;
+    float: left;
+    width: 94%;
+    padding-bottom: 10px;
+}
+
+.statuspanelcontentiteminner{
+    padding-top: 10px;
+    padding-left: 4px;
+}
+
+.statusitemcmd {
+    float: right;
+}
+
+.statusclr {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.linkspanel li {
+    background: transparent url(../images/bullet2.gif) no-repeat scroll 0 0;
+    padding-left: 16px;
+    margin: 4px;
+}
+
+.linkspanel1 li {
+    background: transparent url(../images/page-next.gif) no-repeat scroll 0 0;
+    padding-left: 16px;
+}
+
+.emptytodo {
+    margin-left:500px;
+    margin-top:250px;
+}
+
+.projlinks li {
+    background: transparent url(../images/project12.gif) no-repeat scroll 0 2px;
+}
+
+.dashboardcontent {
+    padding: 24px
+}
+
+.litetext{
+    color: gray;
+}
+.redtext{
+    color: #ff6666;
+}
+
+.subscriprojtext{
+    width:100px;
+}
+
+.subscrilabel{
+    font-weight:bold;
+    vertical-align:middle;
+    padding-bottom:10px;
+}
+.x-toolbar input, .x-toolbar span{
+    margin-left: 3px;
+}
+.x-grid3-summary-row {
+    background-color:#EEEEEE;
+}
+.x-grid3-summary-row td div{
+    font-weight:bold !important;
+
+}
+.emptyGridText{
+    font-size:15px;
+    color:#CCCCCC !important;
+    font-weight:bold !important;
+    margin-top:8%;
+    text-align:center;
+}
+.emptyGridText a{
+    color:#083772;
+}
+.emptyGridTextForPanelView{
+    font-size:15px;
+    color:#CCCCCC !important;
+    font-weight:bold !important;
+    text-align:center;
+}
+.fcue-b, .fcue-b div {
+    font-size:1px;
+    height:21px;
+}
+
+.fcue-outer * .bd {
+    position:relative;
+}
+
+#fcue-close {
+    background:transparent url(../images/box-close-btn.gif) no-repeat scroll;
+    cursor:pointer;
+    display:block;
+    float:right;
+    height:15px;
+    margin:-13px -15px 8px 8px;
+    padding:0;
+    visibility:inherit;
+    width:15px;
+}
+
+.fcue-outer .fcue-pnt-lf-t {
+    background-position:-54px -54px;
+    height:54px;
+    left:-61px;
+    top:10px;
+    width:54px;
+}
+
+.fcue-outer .fcue-pnt-lf-b {
+    background-position:-54px -54px;
+    height:54px;
+    left:-61px;
+    /*top:43px;*/
+    width:54px;
+}
+
+.fcue-outer .fcue-pnt-bm-l {
+    background-position:-54px -110px;
+    height:54px;
+    /*top:90px;*/
+    width:54px;
+}
+
+.fcue-outer .fcue-pnt-bm-r {
+    background-position:-54px -110px;
+    height:54px;
+    /*top:90px;*/
+    left : 300px;
+    width:54px;
+}
+
+.fcue-outer .fcue-pnt-t-l {
+    background-position:0px -54px;
+    height:54px;
+    top:-40px;
+    width:54px;
+}
+
+.fcue-outer .fcue-pnt-t-r {
+    background-position:0px -54px;
+    height:54px;
+    left:288px;
+    top:-40px;
+    width:54px;
+}
+
+.fcue-content {
+    overflow:hidden;
+    padding:30px 15px 15px;
+}
+.fcue-outer * p {
+    /*    color:#333333;*/
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit;
+    margin:0 0 7px;
+}
+
+.fcue-outer * a {
+    color:#355FC5;
+    font-weight:bold !important;
+    text-decoration:none !important;
+}
+
+.fcue-b {
+    background-position:right bottom;
+    position:relative;
+    width:100%;
+}
+
+#fcue-360 {
+    width:375px;
+}
+
+.fcue-outer {
+    background:transparent none repeat scroll 0 0;
+    border:medium none;
+    margin-left:22px;
+    max-width:558px;
+    line-height: 1.35;
+    overflow:visible;
+    position:absolute;
+    text-align:left;
+    visibility:hidden;
+    z-index:2147483647;
+}
+
+.fcue-inner {
+    padding:0 22px 0 0;
+    position:relative;
+}
+.fcue-b, .fcue-b div {
+    font-size:1px;
+    /*height:21px;*/
+}
+
+
+.fcue-inner, .fcue-t, .fcue-b, .fcue-b div {
+    background:transparent url(../images/box1.png) no-repeat scroll right top;
+}
+
+.fcue-t {
+    background-position:left top;
+    height:100%;
+    left:0;
+    margin-left:-22px;
+    position:absolute;
+    top:0;
+    width:22px;
+}
+.fcue-b {
+    background-position:right bottom;
+    position:relative;
+    width:100%;
+}
+
+.fcue-b div {
+    background-position:left bottom;
+    margin-left:-22px;
+    position:relative;
+    width:22px;
+}
+
+
+/*
+for down arrow
+.fcue-outer .fcue-pnt-lg-l {
+background-position:-54px -110px
+}
+
+for up arrow
+background-position: 0px -54px
+
+*/
+.fcue-pnt {
+    background:transparent url(../images/arrow.png) no-repeat scroll 0 0;
+    position:absolute;
+}
+
+.profile{
+    background-position: 0 -577px !important;
+}
+.addcontact{
+    background-position: 0 -2161px !important;
+}
+.editcontact{
+    background-position: 0 -1367px !important;
+}
+.contactexportcsv{
+    background-position: 0 -2737px !important;
+}
+.contactimportcsv{
+    background-position: 0 -1273px !important;
+}
+.contactInfo{
+    float: left;
+    margin:5px;
+    width:70%;
+}
+.contactInfoImg{
+    float:right;
+    margin-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+}
+
+.helpul {
+    margin-left:5px;
+    line-height:1.3;
+    margin-top:5px;
+}
+.helplitext{
+    margin-left:20px;
+}
+.helpli {
+    padding-bottom: 5px;
+    background:url(../images/bullet2.gif) no-repeat scroll 0 0;
+}
+.helpbuttons{
+    float:right;
+    margin:10px 5px;
+}
+
+.archivedProjIcon{
+    background-position: 0 -601px !important;
+}
+
+#quicklinksUL li{
+    background:transparent url(../images/bullet2.gif) no-repeat scroll 0 0;
+    margin:4px;
+    padding-left:16px;
+}
+#quicklinksUL li a{
+    text-decoration:none;
+    color:#003C96;
+}
+#quicklinksUL li a:hover{
+    text-decoration: underline;
+}
+.widgetplantextfield{
+    width:155px !important;
+}
+.widgettodotextfield{
+    width:155px !important;
+}
+.widgetplanclose{
+    padding:115px !important;
+}
+.widgetdiv{
+    background-image: url(../images/Indent.gif) !important;
+}
+.panelViewBkg{
+    background-image:url(../images/bgstrip.png);
+    background-repeat: repeat-x;
+}
+.importLogIcon{
+    background-position: 0 -960px !important;
+}
+.downloadIcon{
+    background-position: 0 -412px !important;
+    margin-left: 38%;
+}
+.x-grid3-summary-row{
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    color:#333;
+    background:#f1f2f4;
+}
+.x-grid3-summary-row .x-grid3-cell-inner{
+    font-weight:bold;
+    padding-bottom:4px;
+}
+.x-grid3-cell-first .x-grid3-cell-inner{
+/*    padding-left:16px;*/
+}
+.x-grid3-summary-cell-first{
+    padding: 3px 5px 0 0 !important;
+}
+.x-grid-hide-summary .x-grid3-summary-row{
+    display:none;
+}
+.x-grid3-summary-msg{
+    padding:4px 16px;
+    font-weight:bold;
+}
+.x-grid3-gridsummary-row-inner{
+    overflow:hidden;
+    width:100%;
+}/* IE6 requires width:100% for hori. scroll to work */
+.x-grid3-gridsummary-row-offset{
+    width:10000px;
+}
+.x-grid-hide-gridsummary .x-grid3-gridsummary-row-inner{
+    display:none;
+}
+.x-window-dlg .wtf-mb-text, .x-window-dlg .x-window-header-text {
+    display: table;
+}
+.check_col_img_autowidth{
+    width: 90% !important;
+}
+.rowheight .x-grid3-row table{
+    height: 36px;
+}
+.inprogressml{
+    background-color: #94d655;
+}
+.overdueml{
+    background-color: #ffe3e3;
+}
+.completedml{
+    background-color: #e0ffe0;
+}
+.milestoneLegendBkg{
+    margin-top:5px;
+    margin-left:20px !important;
+    display: inline-block;
+    height:12px;
+    width:12px;
+}
+.clInfo{
+    font-size: 10px;
+    color: red;
+    margin: 10px 0px;
+    clear: both;
+}
+.clInfoMargin{
+    margin-top: 10px;
+}
+.clOpr{
+    background: url("../images/bullet2.gif") no-repeat scroll 0 0 transparent;
+    margin: 8px;
+    padding-left: 16px;
+}
+.checkListItemNode {
+    background-position: 0 -3502px !important;
+}
+.checkListNode {
+    background-position: 0 -3433px !important;
+}
+.addCL{
+    background-position: 0 -3454px !important;
+}
+.addCLItem{
+    background-position: 0 -3499px !important;
+}
+.removeCL{
+    background-position: 0 -3477px !important;
+}

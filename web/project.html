@@ -1,0 +1,96 @@
+<!--script type="text/javascript" src="../../scripts/minified/project.js?v=191"></script-->
+<script type="text/javascript" src="../../scripts/docs/components/WtfDocListView.js"></script>
+<script type="text/javascript" src="../../scripts/docs/components/WtfDocTagsTree.js"></script>
+<script type="text/javascript" src="../../scripts/docs/components/WtfDocCmptFuncs.js"></script>
+<script type="text/javascript" src="../../scripts/docs/windows/WtfDocPermWin.js"></script>
+<script type="text/javascript" src="../../scripts/cal/WtfCalManager.js"></script>
+<script type="text/javascript" src="../../scripts/cal/WtfCalSettings.js"></script>
+<script type="text/javascript" src="../../scripts/cal/WtfCalDragPlugin.js"></script>
+<script type="text/javascript" src="../../scripts/cal/AddingEvent/WtfEventDetails.js"></script>
+<script type="text/javascript" src="../../scripts/cal/CalendarTree/WtfCalTree.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfDragPlugin.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfGroupSummary.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfGraphics.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfMultiSelectModel.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfProjDialog.js"></script>
+<script type="text/javascript" src="../../scripts/common/WtfAdminTab.js"></script>
+<script type="text/javascript" src="../../scripts/cal/WtfToDoList.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjContainer.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjPlanner.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjTaskPanel.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjGanttChart.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjReportGrid.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjReportColumn.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfTaskModal.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjComparePanel.js"></script>
+<script type="text/javascript" src="../../scripts/proj/WtfProjGlobal.js"></script>
+<script type="text/javascript" src="../../scripts/proj/WtfPERTSheet.js"></script>
+<script type="text/javascript" src="../../scripts/proj/WtfReassignResWin.js"></script>
+<script type="text/javascript" src="../../scripts/reportBuilder/builder.js"></script>
+<script type="text/javascript" src="../../scripts/reportBuilder/reportForm.js"></script>
+<script type="text/javascript" src="../../scripts/reportBuilder/selectTemplateWin.js"></script>
+<script type="text/javascript" src="../../scripts/proj/Components/WtfProjBaselinePanel.js"></script>
+<script type="text/javascript" src="../../scripts/docs/components/WtfQuickSearch.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+//    var projobtid = projectTabs.shift();
+    /*Wtf.Ajax.requestEx({
+        url: "../../admin.jsp",
+        params: {
+            projectid: projobtid.id.substr(3),
+            companyid: companyid,
+            action: 0,
+            mode: 19
+        }
+    }, this, function(response){
+        var obj = eval("(" + response + ")");
+        if(obj.success) {*/
+/*            var projuid = new Wtf.common.Uid(projobtid.id.substr(3), Wtf.etype.proj);
+            var project = new Wtf.ProjectTabs({
+                id: 'projectTabs_' + projobtid.id.substr(3),
+                guid: projobtid.id.substr(3),
+                uid: projuid,
+                parentId: projobtid.id.substr(3),
+                tabid : projobtid.id,
+                layout: 'fit',
+                comtitle: projobtid.title,
+                border: false
+            });
+            mainPanel.loadMask.show();
+            Wtf.getCmp(projobtid.id).add(project);
+            Wtf.getCmp(projobtid.id).doLayout();*/
+/*        } else {
+            if(Wtf.getCmp(projobtid.id) !== undefined) {
+                msgBoxShow(["ERROR", "Oops! This project has been removed."]);
+                mainPanel.remove(projobtid.id);
+                //Wtf.getCmp(projobtid.id).destroy();
+            }
+        }
+    }, function(){
+        msgBoxShow(["ERROR", "Oops! This project has been removed."]);
+        if(Wtf.getCmp(projobtid.id) !== undefined)
+            Wtf.getCmp(projobtid.id).destroy();
+    });
+*/
+    /*Wtf.getCmp(projobtid.id).on('deactivate', function(tabpanel){
+    if (Wtf.getCmp('Community-Tree' + tabpanel.id.substr(3)))
+        Wtf.getCmp('Community-Tree' + tabpanel.id.substr(3)).hide();
+    if (Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl')) {
+    Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl').calendar.hide();
+    Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl').calTree.hide();
+    toggleMainCal(1);
+    }
+    });
+    
+    Wtf.getCmp(projobtid.id).on('activate', function(tabpanel){
+    if (Wtf.getCmp('Community-Tree' + tabpanel.id.substr(3)))
+        Wtf.getCmp('Community-Tree' + tabpanel.id.substr(3)).show();
+    if (Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl')) {
+    Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl').calendar.show();
+    Wtf.getCmp(tabpanel.id.substr(3) + 'calctrl').calTree.show();
+    toggleMainCal(0);
+    }
+    });*/
+    //]]>
+</script>
+ 
